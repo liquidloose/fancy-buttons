@@ -50,6 +50,9 @@ input#inspector-text-control-3 {
   border-style: solid;
   border-bottom: 1.5px;
 }
+.top-rows .first-border {
+  margin-right: 11px !important;
+}
 
 .second-row {
   background: lightgray;

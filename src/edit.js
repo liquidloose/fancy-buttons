@@ -84,7 +84,6 @@ export default function Edit({ attributes, setAttributes }) {
 				<flex className="top-rows">
 					<flex>
 						<RangeControl
-							colors={colors}
 							label={__("Height", "fancy buttons")}
 							onChange={(val) => setAttributes({ height: val })}
 							initialPosition={Number(attributes.height)}
@@ -94,7 +93,6 @@ export default function Edit({ attributes, setAttributes }) {
 					</flex>
 					<flex>
 						<RangeControl
-							colors={colors}
 							label={__("Width", "fancy buttons")}
 							onChange={(val) => setAttributes({ width: val })}
 							initialPosition={Number(attributes.width)}
@@ -105,7 +103,7 @@ export default function Edit({ attributes, setAttributes }) {
 					</flex>
 					<flex>
 						<BorderControl
-							colors={colors}
+							className="first-border"
 							label={__("Border", "fancy buttons")}
 							onChange={(val) => setAttributes({ border: val })}
 							value={attributes.border}
@@ -123,7 +121,6 @@ export default function Edit({ attributes, setAttributes }) {
 				<flex className="top-rows">
 					<flex>
 						<RangeControl
-							colors={colors}
 							label={__("Height 2", "fancy buttons")}
 							onChange={(val) => setAttributes({ heightTwo: val })}
 							initialPosition={Number(attributes.heightTwo)}
@@ -133,7 +130,6 @@ export default function Edit({ attributes, setAttributes }) {
 					</flex>
 					<flex>
 						<RangeControl
-							colors={colors}
 							label={__("Width 2", "fancy buttons")}
 							onChange={(val) => setAttributes({ widthTwo: val })}
 							initialPosition={Number(attributes.width)}
@@ -144,7 +140,6 @@ export default function Edit({ attributes, setAttributes }) {
 					</flex>
 					<flex>
 						<BorderControl
-							colors={colors}
 							label={__("Border 2", "fancy buttons")}
 							onChange={(val) => setAttributes({ borderTwo: val })}
 							value={attributes.borderTwo}
@@ -162,8 +157,7 @@ export default function Edit({ attributes, setAttributes }) {
 				<flex className="top-rows">
 					<flex>
 						<RangeControl
-							colors={colors}
-							label={__("Height 3", "fancy buttons")}
+							label={__("Height 2", "fancy buttons")}
 							onChange={(val) => setAttributes({ heightThree: val })}
 							initialPosition={Number(attributes.heightThree)}
 							max={300}
@@ -172,10 +166,9 @@ export default function Edit({ attributes, setAttributes }) {
 					</flex>
 					<flex>
 						<RangeControl
-							colors={colors}
-							label={__("Width 3", "fancy buttons")}
+							label={__("Width 2", "fancy buttons")}
 							onChange={(val) => setAttributes({ widthThree: val })}
-							initialPosition={Number(attributes.widthThree)}
+							initialPosition={Number(attributes.width)}
 							value={attributes.widthThree}
 							max={300}
 							withInputField={false}
@@ -183,7 +176,6 @@ export default function Edit({ attributes, setAttributes }) {
 					</flex>
 					<flex>
 						<BorderControl
-							colors={colors}
 							label={__("Border 3", "fancy buttons")}
 							onChange={(val) => setAttributes({ borderThree: val })}
 							value={attributes.borderThree}
@@ -192,8 +184,8 @@ export default function Edit({ attributes, setAttributes }) {
 					</flex>
 					<flex>
 						<BoxControl
-							label={__("Border Radius", "fancy buttons")}
-							values={attributes.borderRadiusthree}
+							label={__("Border Radius 3", "fancy buttons")}
+							values={attributes.borderRadiusThree}
 							onChange={(val) => setAttributes({ borderRadiusThree: val })}
 						/>
 					</flex>

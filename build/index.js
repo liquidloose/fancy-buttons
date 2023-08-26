@@ -103,7 +103,6 @@ function Edit({
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", {
     className: "top-rows"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RangeControl, {
-    colors: colors,
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Height", "fancy buttons"),
     onChange: val => setAttributes({
       height: val
@@ -112,7 +111,6 @@ function Edit({
     max: 300,
     withInputField: false
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RangeControl, {
-    colors: colors,
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Width", "fancy buttons"),
     onChange: val => setAttributes({
       width: val
@@ -122,7 +120,7 @@ function Edit({
     max: 300,
     withInputField: false
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalBorderControl, {
-    colors: colors,
+    className: "first-border",
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border", "fancy buttons"),
     onChange: val => setAttributes({
       border: val
@@ -138,7 +136,6 @@ function Edit({
   }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", {
     className: "top-rows"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RangeControl, {
-    colors: colors,
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Height 2", "fancy buttons"),
     onChange: val => setAttributes({
       heightTwo: val
@@ -147,7 +144,6 @@ function Edit({
     max: 300,
     withInputField: false
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RangeControl, {
-    colors: colors,
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Width 2", "fancy buttons"),
     onChange: val => setAttributes({
       widthTwo: val
@@ -157,7 +153,6 @@ function Edit({
     max: 300,
     withInputField: false
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalBorderControl, {
-    colors: colors,
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border 2", "fancy buttons"),
     onChange: val => setAttributes({
       borderTwo: val
@@ -173,8 +168,7 @@ function Edit({
   }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", {
     className: "top-rows"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RangeControl, {
-    colors: colors,
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Height 3", "fancy buttons"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Height 2", "fancy buttons"),
     onChange: val => setAttributes({
       heightThree: val
     }),
@@ -182,17 +176,15 @@ function Edit({
     max: 300,
     withInputField: false
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RangeControl, {
-    colors: colors,
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Width 3", "fancy buttons"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Width 2", "fancy buttons"),
     onChange: val => setAttributes({
       widthThree: val
     }),
-    initialPosition: Number(attributes.widthThree),
+    initialPosition: Number(attributes.width),
     value: attributes.widthThree,
     max: 300,
     withInputField: false
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalBorderControl, {
-    colors: colors,
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border 3", "fancy buttons"),
     onChange: val => setAttributes({
       borderThree: val
@@ -200,8 +192,8 @@ function Edit({
     value: attributes.borderThree,
     withSlider: true
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalBoxControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border Radius", "fancy buttons"),
-    values: attributes.borderRadiusthree,
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border Radius 3", "fancy buttons"),
+    values: attributes.borderRadiusThree,
     onChange: val => setAttributes({
       borderRadiusThree: val
     })

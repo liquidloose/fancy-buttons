@@ -37,6 +37,7 @@ input#inspector-text-control-3 {
     color: black;
 }
 
+
 .top-rows {
     background: gray;
     display: flex;
@@ -47,6 +48,10 @@ input#inspector-text-control-3 {
     border-color: var(--wp--preset--color--contrast);
     border-style: solid;
     border-bottom: 1.5px;
+
+	.first-border {
+    	margin-right: 11px !important;
+	}
 }
 
 .second-row {
@@ -120,9 +125,13 @@ input#inspector-text-control-3 {
 	}
 }
 
+
 .react-colorful {
     box-shadow: -1px 3px 14px 8px rgba(0, 0, 0, 0.2);
 }
+
+
+
 
 .button-prototype-container {
 	display: flex;
