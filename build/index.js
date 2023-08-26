@@ -104,7 +104,7 @@ function Edit({
     className: "top-rows"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RangeControl, {
     colors: colors,
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Height", "gutenpride"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Height", "fancy buttons"),
     onChange: val => setAttributes({
       height: val
     }),
@@ -113,7 +113,7 @@ function Edit({
     withInputField: false
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RangeControl, {
     colors: colors,
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Width", "gutenpride"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Width", "fancy buttons"),
     onChange: val => setAttributes({
       width: val
     }),
@@ -123,14 +123,14 @@ function Edit({
     withInputField: false
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalBorderControl, {
     colors: colors,
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border", "gutenpride"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border", "fancy buttons"),
     onChange: val => setAttributes({
       border: val
     }),
     value: attributes.border,
     withSlider: true
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalBoxControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border Radius", "gutenpride"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border Radius", "fancy buttons"),
     values: attributes.borderRadius,
     onChange: val => setAttributes({
       borderRadius: val
@@ -139,7 +139,7 @@ function Edit({
     className: "top-rows"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RangeControl, {
     colors: colors,
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Height 2", "gutenpride"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Height 2", "fancy buttons"),
     onChange: val => setAttributes({
       heightTwo: val
     }),
@@ -148,7 +148,7 @@ function Edit({
     withInputField: false
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RangeControl, {
     colors: colors,
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Width 2", "gutenpride"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Width 2", "fancy buttons"),
     onChange: val => setAttributes({
       widthTwo: val
     }),
@@ -158,14 +158,14 @@ function Edit({
     withInputField: false
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalBorderControl, {
     colors: colors,
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border 2", "gutenpride"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border 2", "fancy buttons"),
     onChange: val => setAttributes({
       borderTwo: val
     }),
     value: attributes.borderTwo,
     withSlider: true
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalBoxControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border Radius 2", "gutenpride"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border Radius 2", "fancy buttons"),
     values: attributes.borderRadiusTwo,
     onChange: val => setAttributes({
       borderRadiusTwo: val
@@ -174,7 +174,7 @@ function Edit({
     className: "top-rows"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RangeControl, {
     colors: colors,
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Height 3", "gutenpride"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Height 3", "fancy buttons"),
     onChange: val => setAttributes({
       heightThree: val
     }),
@@ -183,7 +183,7 @@ function Edit({
     withInputField: false
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RangeControl, {
     colors: colors,
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Width 3", "gutenpride"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Width 3", "fancy buttons"),
     onChange: val => setAttributes({
       widthThree: val
     }),
@@ -193,14 +193,14 @@ function Edit({
     withInputField: false
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalBorderControl, {
     colors: colors,
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border 3", "gutenpride"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border 3", "fancy buttons"),
     onChange: val => setAttributes({
       borderThree: val
     }),
     value: attributes.borderThree,
     withSlider: true
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalBoxControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border Radius", "gutenpride"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Border Radius", "fancy buttons"),
     values: attributes.borderRadiusthree,
     onChange: val => setAttributes({
       borderRadiusThree: val
@@ -214,7 +214,7 @@ function Edit({
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
     className: "selector-boxes",
     autoComplete: "off",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Selector", "gutenpride"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Selector", "fancy buttons"),
     help: "Choose a class or id to add to the container for further edits.",
     value: attributes.selector,
     onChange: val => setAttributes({
@@ -223,7 +223,7 @@ function Edit({
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
     className: "selector-boxes",
     autoComplete: "off",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Link 1", "gutenpride"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Link 1", "fancy buttons"),
     help: "Provide a link to the image that you want to use as a background.",
     value: attributes.linkOne,
     onChange: val => setAttributes({
@@ -232,7 +232,7 @@ function Edit({
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
     className: "selector-boxes",
     autoComplete: "off",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Link 2", "gutenpride"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Link 2", "fancy buttons"),
     help: "Provide a link to the image that you want to use as a background.",
     value: attributes.linkTwo,
     onChange: val => setAttributes({
@@ -255,7 +255,7 @@ function Edit({
     className: "colorModule"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ColorPicker, {
     className: "colorPicker",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Background Color", "gutenpride"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Background Color", "fancy buttons"),
     color: attributes.color,
     onChange: val => setAttributes({
       color: val
@@ -266,7 +266,7 @@ function Edit({
     className: "colorModule"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ColorPicker, {
     className: "colorPicker",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("noob", "gutenpride"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Background Color", "fancy buttons"),
     color: attributes.colorTwo,
     onChange: val => setAttributes({
       colorTwo: val
@@ -277,7 +277,7 @@ function Edit({
     className: "colorModule"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ColorPicker, {
     className: "colorPicker",
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Background Color", "gutenpride"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Background Color", "fancy buttons"),
     color: attributes.colorThree,
     onChange: val => setAttributes({
       colorThree: val
@@ -482,7 +482,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ (function(module) {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/fancy-buttons","version":"0.1.0","title":"Fancy Buttons","category":"widgets","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"html":false},"textdomain":"fancy-buttons","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/fancy-buttons","version":"0.1.0","title":"Fancy Buttons","category":"text","icon":"flag","description":"A Gutenberg block to show your pride! This block enables you to type text and style it with the color font Gilbert from Type with Pride.","attributes":{"selector":{"type":"string","source":"text","selector":".back2top-selector"},"linkOne":{"type":"string","source":"text","selector":".back2top-link"},"linkTwo":{"type":"string","source":"text","selector":".back2top-link-two"},"linkThree":{"type":"string","source":"text","selector":".back2top-link-three"},"height":{"type":"string","source":"text","selector":".back2top-height"},"width":{"type":"string","source":"text","selector":".back2top-width"},"border":{"type":"object","default":{"color":"","style":"","width":""},"selector":".back2top-border"},"borderRadius":{"type":"object","default":{"top":"0px","left":"0px","right":"0px","bottom":"0px"},"selector":".back2top-border"},"heightTwo":{"type":"string","source":"text","selector":".back2top-height-two"},"widthTwo":{"type":"string","source":"text","selector":".back2top-width-two"},"borderTwo":{"type":"object","default":{"color":"","style":"","width":""},"selector":".back2top-border-two"},"borderRadiusTwo":{"type":"object","default":{"top":"0px","left":"0px","right":"0px","bottom":"0px"},"selector":".back2top-border-two"},"heightThree":{"type":"string","source":"text","selector":".back2top-height-three"},"widthThree":{"type":"string","source":"text","selector":".back2top-width-three"},"borderThree":{"type":"object","default":{"color":"","style":"","width":""},"selector":".back2top-border-three"},"borderRadiusThree":{"type":"object","default":{"top":"0px","left":"0px","right":"0px","bottom":"0px"},"selector":".back2top-border-three"},"color":{"type":"string","source":"text","selector":".back2top-color","default":"#2DB0B7"},"colorTwo":{"type":"string","source":"text","selector":".back2top-color-two","default":"#2DB0B7"},"colorThree":{"type":"string","source":"text","selector":".back2top-color-three","default":"#2DB0B7"}},"supports":{"html":true},"textdomain":"gutenpride","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 

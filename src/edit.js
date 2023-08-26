@@ -85,7 +85,7 @@ export default function Edit({ attributes, setAttributes }) {
 					<flex>
 						<RangeControl
 							colors={colors}
-							label={__("Height", "gutenpride")}
+							label={__("Height", "fancy buttons")}
 							onChange={(val) => setAttributes({ height: val })}
 							initialPosition={Number(attributes.height)}
 							max={300}
@@ -95,7 +95,7 @@ export default function Edit({ attributes, setAttributes }) {
 					<flex>
 						<RangeControl
 							colors={colors}
-							label={__("Width", "gutenpride")}
+							label={__("Width", "fancy buttons")}
 							onChange={(val) => setAttributes({ width: val })}
 							initialPosition={Number(attributes.width)}
 							value={attributes.width}
@@ -106,7 +106,7 @@ export default function Edit({ attributes, setAttributes }) {
 					<flex>
 						<BorderControl
 							colors={colors}
-							label={__("Border", "gutenpride")}
+							label={__("Border", "fancy buttons")}
 							onChange={(val) => setAttributes({ border: val })}
 							value={attributes.border}
 							withSlider
@@ -114,7 +114,7 @@ export default function Edit({ attributes, setAttributes }) {
 					</flex>
 					<flex>
 						<BoxControl
-							label={__("Border Radius", "gutenpride")}
+							label={__("Border Radius", "fancy buttons")}
 							values={attributes.borderRadius}
 							onChange={(val) => setAttributes({ borderRadius: val })}
 						/>
@@ -124,7 +124,7 @@ export default function Edit({ attributes, setAttributes }) {
 					<flex>
 						<RangeControl
 							colors={colors}
-							label={__("Height 2", "gutenpride")}
+							label={__("Height 2", "fancy buttons")}
 							onChange={(val) => setAttributes({ heightTwo: val })}
 							initialPosition={Number(attributes.heightTwo)}
 							max={300}
@@ -134,7 +134,7 @@ export default function Edit({ attributes, setAttributes }) {
 					<flex>
 						<RangeControl
 							colors={colors}
-							label={__("Width 2", "gutenpride")}
+							label={__("Width 2", "fancy buttons")}
 							onChange={(val) => setAttributes({ widthTwo: val })}
 							initialPosition={Number(attributes.width)}
 							value={attributes.widthTwo}
@@ -145,7 +145,7 @@ export default function Edit({ attributes, setAttributes }) {
 					<flex>
 						<BorderControl
 							colors={colors}
-							label={__("Border 2", "gutenpride")}
+							label={__("Border 2", "fancy buttons")}
 							onChange={(val) => setAttributes({ borderTwo: val })}
 							value={attributes.borderTwo}
 							withSlider
@@ -153,7 +153,7 @@ export default function Edit({ attributes, setAttributes }) {
 					</flex>
 					<flex>
 						<BoxControl
-							label={__("Border Radius 2", "gutenpride")}
+							label={__("Border Radius 2", "fancy buttons")}
 							values={attributes.borderRadiusTwo}
 							onChange={(val) => setAttributes({ borderRadiusTwo: val })}
 						/>
@@ -163,7 +163,7 @@ export default function Edit({ attributes, setAttributes }) {
 					<flex>
 						<RangeControl
 							colors={colors}
-							label={__("Height 3", "gutenpride")}
+							label={__("Height 3", "fancy buttons")}
 							onChange={(val) => setAttributes({ heightThree: val })}
 							initialPosition={Number(attributes.heightThree)}
 							max={300}
@@ -173,7 +173,7 @@ export default function Edit({ attributes, setAttributes }) {
 					<flex>
 						<RangeControl
 							colors={colors}
-							label={__("Width 3", "gutenpride")}
+							label={__("Width 3", "fancy buttons")}
 							onChange={(val) => setAttributes({ widthThree: val })}
 							initialPosition={Number(attributes.widthThree)}
 							value={attributes.widthThree}
@@ -184,7 +184,7 @@ export default function Edit({ attributes, setAttributes }) {
 					<flex>
 						<BorderControl
 							colors={colors}
-							label={__("Border 3", "gutenpride")}
+							label={__("Border 3", "fancy buttons")}
 							onChange={(val) => setAttributes({ borderThree: val })}
 							value={attributes.borderThree}
 							withSlider
@@ -192,7 +192,7 @@ export default function Edit({ attributes, setAttributes }) {
 					</flex>
 					<flex>
 						<BoxControl
-							label={__("Border Radius", "gutenpride")}
+							label={__("Border Radius", "fancy buttons")}
 							values={attributes.borderRadiusthree}
 							onChange={(val) => setAttributes({ borderRadiusThree: val })}
 						/>
@@ -204,7 +204,7 @@ export default function Edit({ attributes, setAttributes }) {
 							<TextControl
 								className="selector-boxes"
 								autoComplete="off"
-								label={__("Selector", "gutenpride")}
+								label={__("Selector", "fancy buttons")}
 								help="Choose a class or id to add to the container for further edits."
 								value={attributes.selector}
 								onChange={(val) => setAttributes({ selector: val })}
@@ -212,7 +212,7 @@ export default function Edit({ attributes, setAttributes }) {
 							<TextControl
 								className="selector-boxes"
 								autoComplete="off"
-								label={__("Link 1", "gutenpride")}
+								label={__("Link 1", "fancy buttons")}
 								help="Provide a link to the image that you want to use as a background."
 								value={attributes.linkOne}
 								onChange={(val) => setAttributes({ linkOne: val })}
@@ -220,7 +220,7 @@ export default function Edit({ attributes, setAttributes }) {
 							<TextControl
 								className="selector-boxes"
 								autoComplete="off"
-								label={__("Link 2", "gutenpride")}
+								label={__("Link 2", "fancy buttons")}
 								help="Provide a link to the image that you want to use as a background."
 								value={attributes.linkTwo}
 								onChange={(val) => setAttributes({ linkTwo: val })}
@@ -238,7 +238,7 @@ export default function Edit({ attributes, setAttributes }) {
 						<flex className="colorModule">
 							<ColorPicker
 								className="colorPicker"
-								label={__("Background Color", "gutenpride")}
+								label={__("Background Color", "fancy buttons")}
 								color={attributes.color}
 								onChange={(val) => setAttributes({ color: val })}
 								value={attributes.color}
@@ -248,7 +248,7 @@ export default function Edit({ attributes, setAttributes }) {
 						<flex className="colorModule">
 							<ColorPicker
 								className="colorPicker"
-								label={__("noob", "gutenpride")}
+								label={__("Background Color", "fancy buttons")}
 								color={attributes.colorTwo}
 								onChange={(val) => setAttributes({ colorTwo: val })}
 								value={attributes.colorTwo}
@@ -258,7 +258,7 @@ export default function Edit({ attributes, setAttributes }) {
 						<flex className="colorModule">
 							<ColorPicker
 								className="colorPicker"
-								label={__("Background Color", "gutenpride")}
+								label={__("Background Color", "fancy buttons")}
 								color={attributes.colorThree}
 								onChange={(val) => setAttributes({ colorThree: val })}
 								value={attributes.colorThree}
