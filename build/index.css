@@ -1,0 +1,143 @@
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-gutenpride input[type=text] {
+  font-family: Gilbert, sans-serif;
+  font-size: 1rem;
+  color: inherit;
+  background: inherit;
+  border: 0;
+}
+
+.back2top-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--wp--preset--color--primary);
+  color: black;
+  border-color: gray;
+  border-width: 3px;
+  border-style: solid;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+input#inspector-text-control-2 {
+  background: gray;
+  color: black;
+}
+
+input#inspector-text-control-3 {
+  background: gray;
+  color: black;
+}
+
+.top-rows {
+  background: gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 3px;
+  border-color: var(--wp--preset--color--contrast);
+  border-style: solid;
+  border-bottom: 1.5px;
+}
+
+.second-row {
+  background: lightgray;
+  display: flex;
+  /*justify-content: space-between;*/
+  align-items: center;
+  flex-wrap: wrap;
+}
+.second-row .elements-container {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5%;
+}
+.second-row .elements-container .elements {
+  height: auto;
+  background: var(--wp--preset--color--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10%;
+  border-width: 3px;
+  border-color: lightgray;
+  border-style: solid;
+  padding: 15%;
+}
+.second-row .elements-container .elements input {
+  color: var(--wp--preset--color--primary);
+  background: white !important;
+  max-width: 150px !important;
+}
+.second-row .elements-container .elements .components-base-control__field {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.second-row .elements-container .button-prototype {
+  background: white;
+  height: 200px;
+  width: 200px;
+}
+.second-row .color-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-color: var(--wp--preset--color--contrast);
+  border-style: solid;
+  border-width: 3px;
+  margin-left: auto;
+}
+.second-row .color-container flex.colorModule {
+  padding: 16px;
+  border-color: lightgray;
+  border-style: solid;
+  border-right: 3px;
+  background: gray;
+  border-top: 1.5px;
+  border-bottom: 1.5px;
+}
+
+.react-colorful {
+  box-shadow: -1px 3px 14px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-prototype-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white !important;
+  height: 300px;
+  width: 300px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+
+.css-qnhd10 {
+  padding: 7px !important;
+}
+
+.colorPicker {
+  background: gray;
+}
+
+.components-range-control__root {
+  width: 173px !important;
+}
+
+/*# sourceMappingURL=index.css.map*/
