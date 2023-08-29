@@ -8,6 +8,9 @@ export default function save({ attributes }) {
 			<div className="back2top-link">{attributes.linkOne}</div>
 			<div className="back2top-link-two">{attributes.linkTwo}</div>
 			<div className="back2top-link-three">{attributes.linkThree}</div>
+			<div className="back2top-opacity">{attributes.opacity}</div>
+			<div className="back2top-opacity-two">{attributes.opacityTwo}</div>
+			<div className="back2top-opacity-three">{attributes.opacityThree}</div>
 			<div className="back2top-height">{attributes.height}</div>
 			<div className="back2top-height-two">{attributes.heightTwo}</div>
 			<div className="back2top-height-three">{attributes.heightThree}</div>

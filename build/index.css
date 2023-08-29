@@ -6,14 +6,6 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-.wp-block-create-block-gutenpride input[type=text] {
-  font-family: Gilbert, sans-serif;
-  font-size: 1rem;
-  color: inherit;
-  background: inherit;
-  border: 0;
-}
-
 .back2top-container {
   display: flex;
   flex-direction: column;
@@ -23,10 +15,186 @@
   border-color: gray;
   border-width: 3px;
   border-style: solid;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
   padding-top: 3%;
   padding-bottom: 3%;
+}
+.back2top-container .top-rows {
+  background: gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border-top: 3px;
+  border-color: var(--wp--preset--color--contrast);
+  border-style: solid;
+  border-bottom: 1.5px;
+  padding: 1%;
+}
+.back2top-container .top-rows .first-border {
+  margin-right: 11px !important;
+}
+.back2top-container .top-rows .top-rows-container {
+  flex-direction: row !important;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: normal;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: -8px;
+}
+@media (max-width: 1120px) {
+  .back2top-container .top-rows .top-rows-container {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 840px) {
+  .back2top-container .top-rows .top-rows-container flex:nth-of-type(1) {
+    margin-top: 5%;
+  }
+  .back2top-container .top-rows .top-rows-container flex div#inspector-box-control-0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 300px;
+    padding: 0px;
+  }
+  .back2top-container .top-rows .top-rows-container flex div#inspector-box-control-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 300px;
+    margin-top: 56px;
+    padding: 0px;
+  }
+  .back2top-container .top-rows .top-rows-container flex div#inspector-box-control-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 300px;
+    margin-top: 56px;
+    padding: 0px;
+  }
+}
+@media (max-width: 1120px) {
+  .back2top-container .top-rows .top-rows-container flex div#inspector-box-control-0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 75px;
+  }
+  .back2top-container .top-rows .top-rows-container flex div#inspector-box-control-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 75px;
+  }
+  .back2top-container .top-rows .top-rows-container flex div#inspector-box-control-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 75px;
+  }
+}
+@media (max-width: 1120px) {
+  .back2top-container .top-rows .top-rows-container flex .components-flex {
+    flex-direction: column;
+  }
+}
+.back2top-container .second-row {
+  background: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.back2top-container .second-row .elements-container {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+@media (max-width: 840px) {
+  .back2top-container .second-row .elements-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.back2top-container .second-row .elements-container .elements {
+  height: auto;
+  background: var(--wp--preset--color--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-width: 3px;
+  border-color: lightgray;
+  border-style: solid;
+  padding: 5%;
+  width: 34%;
+}
+@media (max-width: 840px) {
+  .back2top-container .second-row .elements-container .elements {
+    width: 100%;
+  }
+}
+.back2top-container .second-row .elements-container .elements input {
+  color: var(--wp--preset--color--primary);
+  background: white !important;
+  max-width: 150px !important;
+}
+.back2top-container .second-row .elements-container .elements .components-base-control__field {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.back2top-container .second-row .elements-container .button-prototype-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back2top-container .second-row .elements-container .button-prototype-container .layer {
+  position: absolute;
+}
+.back2top-container .color-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-color: var(--wp--preset--color--contrast);
+  border-style: solid;
+  border-width: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.back2top-container .color-container flex.colorModule {
+  padding: 16px;
+  border-color: lightgray;
+  border-style: solid;
+  border-right: 3px;
+  background: gray;
+  border-top: 1.5px;
+  border-bottom: 1.5px;
+}
+@media (max-width: 1120px) {
+  .back2top-container .color-container flex.colorModule {
+    padding: 0px;
+  }
+}
+.back2top-container .color-container flex.opacity-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+  background: var(--wp--preset--color--primary);
+  border-style: solid;
+  border-color: gray;
+  border-width: 3px;
+  padding: 15px;
 }
 
 input#inspector-text-control-2 {
@@ -39,82 +207,6 @@ input#inspector-text-control-3 {
   color: black;
 }
 
-.top-rows {
-  background: gray;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  border-top: 3px;
-  border-color: var(--wp--preset--color--contrast);
-  border-style: solid;
-  border-bottom: 1.5px;
-}
-.top-rows .first-border {
-  margin-right: 11px !important;
-}
-
-.second-row {
-  background: lightgray;
-  display: flex;
-  /*justify-content: space-between;*/
-  align-items: center;
-  flex-wrap: wrap;
-}
-.second-row .elements-container {
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 5%;
-}
-.second-row .elements-container .elements {
-  height: auto;
-  background: var(--wp--preset--color--primary);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  padding: 10%;
-  border-width: 3px;
-  border-color: lightgray;
-  border-style: solid;
-  padding: 15%;
-}
-.second-row .elements-container .elements input {
-  color: var(--wp--preset--color--primary);
-  background: white !important;
-  max-width: 150px !important;
-}
-.second-row .elements-container .elements .components-base-control__field {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-.second-row .elements-container .button-prototype {
-  background: white;
-  height: 200px;
-  width: 200px;
-}
-.second-row .color-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-color: var(--wp--preset--color--contrast);
-  border-style: solid;
-  border-width: 3px;
-  margin-left: auto;
-}
-.second-row .color-container flex.colorModule {
-  padding: 16px;
-  border-color: lightgray;
-  border-style: solid;
-  border-right: 3px;
-  background: gray;
-  border-top: 1.5px;
-  border-bottom: 1.5px;
-}
-
 .react-colorful {
   box-shadow: -1px 3px 14px 8px rgba(0, 0, 0, 0.2);
 }
@@ -124,15 +216,11 @@ input#inspector-text-control-3 {
   justify-content: center;
   align-items: center;
   background: white !important;
-  height: 300px;
-  width: 300px;
+  height: 350px;
+  width: 350px;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
-}
-
-.css-qnhd10 {
-  padding: 7px !important;
 }
 
 .colorPicker {
@@ -141,6 +229,10 @@ input#inspector-text-control-3 {
 
 .components-range-control__root {
   width: 173px !important;
+}
+
+.components-flex-item.css-qcm38l.e19lxcc00 {
+  display: flex;
 }
 
 /*# sourceMappingURL=index.css.map*/
