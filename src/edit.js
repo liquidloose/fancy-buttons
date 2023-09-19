@@ -1,6 +1,7 @@
 import { __ } from "@wordpress/i18n";
 import { useState } from "@wordpress/element";
 import { useBlockProps, HeightControl } from "@wordpress/block-editor";
+import { useEffect } from "react";
 import {
 	TextControl,
 	ColorPicker,
@@ -22,6 +23,13 @@ export default function Edit({ attributes, setAttributes }) {
 		{ name: "Blue 20", color: "#72aee6" },
 		// ...
 	];
+
+	useEffect(() => {
+		const link = document.createElement("link");
+		link.href = "https://fonts.googleapis.com/icon?family=Material+Icons";
+		link.rel = "stylesheet";
+		document.head.appendChild(link);
+	}, []);
 
 	const layerOne = {
 		display: "flex",
@@ -84,7 +92,7 @@ export default function Edit({ attributes, setAttributes }) {
 	console.log(attributes.color);
 	console.log(`This is linkOne: ${attributes.linkOne}`);
 	console.log(`The borderColor is: ${attributes.border.color}`);
-	console.log(`The background-image is: ${attributes.backgroundImage}`)
+	console.log(`The background-image is: ${attributes.backgroundImage}`);
 	return (
 		<flex {...useBlockProps()}>
 			<flex className="back2top-container">
@@ -240,13 +248,12 @@ export default function Edit({ attributes, setAttributes }) {
 								autoComplete="off"
 								help="Provide a link to the image that you want to use as a background."
 								value={attributes.linkOne}
-								onChange={(val) => setAttributes({linkOne: val})}
+								onChange={(val) => setAttributes({ linkOne: val })}
 							/>
 							<TextControl
 								label={__("Link 2", "fancy buttons")}
 								className="selector-boxes"
 								autoComplete="off"
-								
 								help="Provide a link to the image that you want to use as a background."
 								value={attributes.linkTwo}
 								onChange={(val) => setAttributes({ linkTwo: val })}
@@ -255,19 +262,26 @@ export default function Edit({ attributes, setAttributes }) {
 								label={__("Link 3", "fancy buttons")}
 								className="selector-boxes"
 								autoComplete="off"
-								
 								help="Provide a link to the image that you want to use as a background."
 								value={attributes.linkTwo}
 								onChange={(val) => setAttributes({ linkThree: val })}
 							/>
 						</flex>
-						<flex class="button-prototype-container">
-  							<flex class="layer" id="layerOne" style={layerOne}></flex>
-  							<flex class="layer" id="layerTwo" style={layerTwo}></flex>
-  							<flex class="layer" id="layerThree" style={layerThree}></flex>
+						<flex className="button-prototype-container">
+							<flex className="layer" id="layerOne" style={layerOne}></flex>
+							<flex className="layer" id="layerTwo" style={layerTwo}></flex>
+							<flex className="layer" id="layerThree" style={layerThree}></flex>
+							<flex className="layer">
+								<i
+									className="material-icons"
+									style={{ fontSize: "100px", color: "black", zIndex: "0" }}
+								>
+									cloud
+								</i>
+							</flex>
 						</flex>
 					</flex>
-					
+
 					<flex className="color-container">
 						<flex className="colorModule">
 							<ColorPicker
@@ -307,7 +321,7 @@ export default function Edit({ attributes, setAttributes }) {
 									initialPosition={Number(attributes.opacity)}
 									max={1}
 									withInputField={false}
-									step={.1}
+									step={0.1}
 									marks={{}}
 									railColor="yellowgreen"
 								/>
@@ -319,7 +333,7 @@ export default function Edit({ attributes, setAttributes }) {
 									initialPosition={Number(attributes.opacityTwo)}
 									max={1}
 									withInputField={false}
-									step={.1}
+									step={0.1}
 									marks={{}}
 									railColor="yellowgreen"
 								/>
@@ -331,7 +345,7 @@ export default function Edit({ attributes, setAttributes }) {
 									initialPosition={Number(attributes.opacityThree)}
 									max={1}
 									withInputField={false}
-									step={.1}
+									step={0.1}
 									marks={{}}
 									railColor="yellowgreen"
 								/>

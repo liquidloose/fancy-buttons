@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Plugin Name:       Fancy Buttons
  * Description:       Example block scaffolded with Create Block tool.
@@ -21,6 +22,11 @@
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function create_block_fancy_buttons_block_init() {
-	register_block_type( __DIR__ . '/build' );
+	register_block_type(__DIR__ . '/build');
 }
-add_action( 'init', 'create_block_fancy_buttons_block_init' );
+add_action('init', 'create_block_fancy_buttons_block_init');
+
+function enqueue_remix_icon_css() {
+	wp_enqueue_style('remix-icon-css', 'https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css', array(), null);
+}
+add_action('wp_enqueue_scripts', 'enqueue_remix_icon_css');
