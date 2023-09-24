@@ -85,6 +85,19 @@ export default function Edit({ attributes, setAttributes }) {
 		borderWidth: attributes.borderThree.width,
 	};
 
+	const iconStyle = {
+		fontSize: attributes.iconSize,
+		color: attributes.iconColor,
+		opacity: attributes.iconOpacity,
+		borderTopLeftRadius: attributes.iconBorderRadius.top,
+		borderTopRightRadius: attributes.iconBorderRadius.right,
+		borderBottomRightRadius: attributes.iconBorderRadius.bottom,
+		borderBottomLeftRadius: attributes.iconBorderRadius.left,
+		borderColor: attributes.iconBorder.color,
+		borderStyle: attributes.iconBorder.style,
+		borderWidth: attributes.iconBorder.width,
+	};
+
 	console.log(typeof attributes.height);
 	console.log(attributes.borderRadius);
 	console.log(attributes.borderRadius.top);
@@ -231,6 +244,39 @@ export default function Edit({ attributes, setAttributes }) {
 						</flex>
 					</flex>
 				</flex>
+				<flex className="top-rows">
+					<flex className="top-rows-container">
+						<flex>
+							<RangeControl
+								label={__("Icon Size", "fancy buttons")}
+								onChange={(val) => setAttributes({ iconSize: val })}
+								initialPosition={Number(attributes.iconSize)}
+								max={300}
+								withInputField={false}
+								marks={{}}
+								step={10}
+								railColor="yellowgreen"
+							/>
+						</flex>
+
+						<flex>
+							<BorderControl
+								className="first-border"
+								label={__("Border", "fancy buttons")}
+								onChange={(val) => setAttributes({ iconBorder: val })}
+								value={attributes.iconBorder}
+								withSlider
+							/>
+						</flex>
+						<flex>
+							<BoxControl
+								label={__("Border Radius", "fancy buttons")}
+								values={attributes.borderRadiusThree}
+								onChange={(val) => setAttributes({ iconBorderRadius: val })}
+							/>
+						</flex>
+					</flex>
+				</flex>
 				<flex className="second-row">
 					<flex className="elements-container">
 						<flex className="elements">
@@ -266,17 +312,22 @@ export default function Edit({ attributes, setAttributes }) {
 								value={attributes.linkTwo}
 								onChange={(val) => setAttributes({ linkThree: val })}
 							/>
+							<TextControl
+								label={__("Icon", "fancy buttons")}
+								className="selector-boxes"
+								autoComplete="off"
+								help="Choose an icon at https://fonts.google.com/icons. Enter 'cloud' if you want to use the cloud icon."
+								value={attributes.icon}
+								onChange={(val) => setAttributes({ icon: val })}
+							/>
 						</flex>
 						<flex className="button-prototype-container">
 							<flex className="layer" id="layerOne" style={layerOne}></flex>
 							<flex className="layer" id="layerTwo" style={layerTwo}></flex>
 							<flex className="layer" id="layerThree" style={layerThree}></flex>
 							<flex className="layer">
-								<i
-									className="material-icons"
-									style={{ fontSize: "100px", color: "black", zIndex: "0" }}
-								>
-									cloud
+								<i className="material-icons" style={iconStyle}>
+									{attributes.icon}
 								</i>
 							</flex>
 						</flex>
@@ -313,6 +364,16 @@ export default function Edit({ attributes, setAttributes }) {
 								defaultValue="#000"
 							/>
 						</flex>
+						<flex className="colorModule">
+							<ColorPicker
+								className="colorPicker"
+								label={__("Icon Color", "fancy buttons")}
+								color={attributes.colorThree}
+								onChange={(val) => setAttributes({ iconColor: val })}
+								value={attributes.iconColor}
+								defaultValue="#2DB0B7"
+							/>
+						</flex>
 						<flex className="opacity-container">
 							<flex>
 								<RangeControl
@@ -343,6 +404,18 @@ export default function Edit({ attributes, setAttributes }) {
 									label={__("Opacity 3", "fancy buttons")}
 									onChange={(val) => setAttributes({ opacityThree: val })}
 									initialPosition={Number(attributes.opacityThree)}
+									max={1}
+									withInputField={false}
+									step={0.1}
+									marks={{}}
+									railColor="yellowgreen"
+								/>
+							</flex>
+							<flex>
+								<RangeControl
+									label={__("Icon Opacity", "fancy buttons")}
+									onChange={(val) => setAttributes({ iconOpacity: val })}
+									initialPosition={Number(attributes.iconOpacity)}
 									max={1}
 									withInputField={false}
 									step={0.1}

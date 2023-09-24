@@ -8,9 +8,11 @@ export default function save({ attributes }) {
 			<div className="back2top-link">{attributes.linkOne}</div>
 			<div className="back2top-link-two">{attributes.linkTwo}</div>
 			<div className="back2top-link-three">{attributes.linkThree}</div>
+			<div className="back2top-icon">{attributes.icon}</div>
 			<div className="back2top-opacity">{attributes.opacity}</div>
 			<div className="back2top-opacity-two">{attributes.opacityTwo}</div>
 			<div className="back2top-opacity-three">{attributes.opacityThree}</div>
+			<div className="back2top-icon-opacity">{attributes.iconOpacity}</div>
 			<div className="back2top-height">{attributes.height}</div>
 			<div className="back2top-height-two">{attributes.heightTwo}</div>
 			<div className="back2top-height-three">{attributes.heightThree}</div>
@@ -20,6 +22,8 @@ export default function save({ attributes }) {
 			<div className="back2top-color">{attributes.color}</div>
 			<div className="back2top-color-two">{attributes.colorTwo}</div>
 			<div className="back2top-color-three">{attributes.colorThree}</div>
+			<div className="back2top-icon-size">{attributes.iconSize}</div>
+			<div className="back2top-icon-color">{attributes.iconColor}</div>
 			<div className="back2top-border">
 				<div>borderWidth: {attributes.border.width}</div>
 				<div>borderColor: {attributes.border.color}</div>
@@ -37,6 +41,12 @@ export default function save({ attributes }) {
 				<div>borderColor: {attributes.borderThree.color}</div>
 				<div>borderStyle: {attributes.borderThree.style}</div>
 				<div>borderRadius top: {attributes.borderRadiusThree.top}</div>
+			</div>
+			<div className="back2top-icon-border-radius">
+				<div>borderWidth: {attributes.iconBorder.width}</div>
+				<div>borderColor: {attributes.iconBorder.color}</div>
+				<div>borderStyle: {attributes.iconBorder.style}</div>
+				<div>borderRadius top: {attributes.iconBorderRadius.top}</div>
 			</div>
 		</div>
 	);

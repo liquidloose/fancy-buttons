@@ -28,6 +28,11 @@
 			"source": "text",
 			"selector": ".back2top-link-three"
 		},
+		"icon" : {
+			"type": "string",
+			"source": "text",
+			"selector": ".back2top-icon"
+		},
 		"height": {
 			"type": "string",
 			"source": "text",
@@ -120,6 +125,15 @@
 			},
 			"selector": ".back2top-border-three"
 		},
+		"iconBorder": {
+			"type": "object",
+			"default": {
+				"color": "",
+				"style": "",
+				"width": ""
+			},
+			"selector": ".back2top-iconBorder"
+		},
 		"borderRadiusThree": {
 			"type": "object",
 			"default": {
@@ -129,6 +143,16 @@
 				"bottom": "0px"
 			},
 			"selector": ".back2top-border-three"
+		},
+		"iconBorderRadius": {
+			"type": "object",
+			"default": {
+				"top": "0px",
+				"left": "0px",
+				"right": "0px",
+				"bottom": "0px"
+			},
+			"selector": ".back2top-icon-border-radius"
 		},
 		"color" : {
 			"type" : "string",
@@ -147,6 +171,22 @@
 			"source": "text",
 			"selector": ".back2top-color-three",
 			"default": "#2DB0B7"
+		},
+		"iconColor" : {
+			"type" : "string",
+			"source": "text",
+			"selector": ".back2top-icon-color",
+			"default": "#2DB0B7"
+		},
+		"iconSize" : {
+			"type": "string",
+			"source": "text",
+			"selector": ".back2top-icon-size"
+		},
+		"iconOpacity" : {
+			"type": "string",
+			"source": "text",
+			"selector": ".back2top-icon-opacity"
 		}
 	},
 	"supports": {
