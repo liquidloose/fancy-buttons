@@ -1,6 +1,6 @@
 import { __ } from "@wordpress/i18n";
 import { useState } from "@wordpress/element";
-import { useBlockProps, HeightControl } from "@wordpress/block-editor";
+import { useBlockProps } from "@wordpress/block-editor";
 import { useEffect } from "react";
 import {
 	TextControl,
@@ -9,6 +9,7 @@ import {
 	__experimentalBorderControl as BorderControl,
 	__experimentalBoxControl as BoxControl,
 } from "@wordpress/components";
+import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import "./editor.scss";
 
 export default function Edit({ attributes, setAttributes }) {
@@ -86,7 +87,9 @@ export default function Edit({ attributes, setAttributes }) {
 	};
 
 	const iconStyle = {
-		fontSize: attributes.iconSize,
+		zIndex: "3000",
+		position: "relative",
+		fontSize: attributes.iconSize + "px",
 		color: attributes.iconColor,
 		opacity: attributes.iconOpacity,
 		borderTopLeftRadius: attributes.iconBorderRadius.top,
@@ -98,283 +101,13 @@ export default function Edit({ attributes, setAttributes }) {
 		borderWidth: attributes.iconBorder.width,
 	};
 
-	console.log(typeof attributes.height);
-	console.log(attributes.borderRadius);
-	console.log(attributes.borderRadius.top);
-	console.log(typeof attributes.borderRadius.top);
-	console.log(attributes.color);
-	console.log(`This is linkOne: ${attributes.linkOne}`);
-	console.log(`The borderColor is: ${attributes.border.color}`);
-	console.log(`The background-image is: ${attributes.backgroundImage}`);
+	console.log("attributes.iconSize: ", attributes.iconSize);
 	return (
 		<flex {...useBlockProps()}>
 			<flex className="back2top-container">
-				<flex className="top-rows">
-					<flex className="top-rows-container">
-						<flex>
-							<RangeControl
-								label={__("Height", "fancy buttons")}
-								onChange={(val) => setAttributes({ height: val })}
-								initialPosition={Number(attributes.height)}
-								max={300}
-								withInputField={false}
-								marks={{}}
-								step={10}
-								railColor="yellowgreen"
-							/>
-						</flex>
-						<flex>
-							<RangeControl
-								label={__("Width", "fancy buttons")}
-								onChange={(val) => setAttributes({ width: val })}
-								initialPosition={Number(attributes.width)}
-								value={attributes.width}
-								max={300}
-								withInputField={false}
-								marks={{}}
-								step={10}
-								railColor="yellowgreen"
-							/>
-						</flex>
-						<flex>
-							<BorderControl
-								className="first-border"
-								label={__("Border", "fancy buttons")}
-								onChange={(val) => setAttributes({ border: val })}
-								value={attributes.border}
-								withSlider
-							/>
-						</flex>
-						<flex>
-							<BoxControl
-								label={__("Border Radius", "fancy buttons")}
-								values={attributes.borderRadius}
-								onChange={(val) => setAttributes({ borderRadius: val })}
-							/>
-						</flex>
-					</flex>
-				</flex>
-				<flex className="top-rows">
-					<flex className="top-rows-container">
-						<flex>
-							<RangeControl
-								label={__("Height", "fancy buttons")}
-								onChange={(val) => setAttributes({ heightTwo: val })}
-								initialPosition={Number(attributes.heightTwo)}
-								max={300}
-								withInputField={false}
-								marks={{}}
-								step={10}
-								railColor="yellowgreen"
-							/>
-						</flex>
-						<flex>
-							<RangeControl
-								label={__("Width", "fancy buttons")}
-								onChange={(val) => setAttributes({ widthTwo: val })}
-								initialPosition={Number(attributes.widthTwo)}
-								value={attributes.widthTwo}
-								max={300}
-								withInputField={false}
-								marks={{}}
-								step={10}
-								railColor="yellowgreen"
-							/>
-						</flex>
-						<flex className="border-control">
-							<BorderControl
-								className="first-border"
-								label={__("Border", "fancy buttons")}
-								onChange={(val) => setAttributes({ borderTwo: val })}
-								value={attributes.borderTwo}
-								withSlider
-							/>
-						</flex>
-						<flex>
-							<BoxControl
-								label={__("Border Radius", "fancy buttons")}
-								values={attributes.borderRadiusTwo}
-								onChange={(val) => setAttributes({ borderRadiusTwo: val })}
-							/>
-						</flex>
-					</flex>
-				</flex>
-				<flex className="top-rows">
-					<flex className="top-rows-container">
-						<flex>
-							<RangeControl
-								label={__("Height", "fancy buttons")}
-								onChange={(val) => setAttributes({ heightThree: val })}
-								initialPosition={Number(attributes.heightThree)}
-								max={300}
-								withInputField={false}
-								marks={{}}
-								step={10}
-								railColor="yellowgreen"
-							/>
-						</flex>
-						<flex>
-							<RangeControl
-								label={__("Width", "fancy buttons")}
-								onChange={(val) => setAttributes({ widthThree: val })}
-								initialPosition={Number(attributes.widthThree)}
-								value={attributes.widthThree}
-								max={300}
-								withInputField={false}
-								marks={{}}
-								step={10}
-								railColor="yellowgreen"
-							/>
-						</flex>
-						<flex>
-							<BorderControl
-								className="first-border"
-								label={__("Border", "fancy buttons")}
-								onChange={(val) => setAttributes({ borderThree: val })}
-								value={attributes.borderThree}
-								withSlider
-							/>
-						</flex>
-						<flex>
-							<BoxControl
-								label={__("Border Radius", "fancy buttons")}
-								values={attributes.borderRadiusThree}
-								onChange={(val) => setAttributes({ borderRadiusThree: val })}
-							/>
-						</flex>
-					</flex>
-				</flex>
-				<flex className="top-rows">
-					<flex className="top-rows-container">
-						<flex>
-							<RangeControl
-								label={__("Icon Size", "fancy buttons")}
-								onChange={(val) => setAttributes({ iconSize: val })}
-								initialPosition={Number(attributes.iconSize)}
-								max={300}
-								withInputField={false}
-								marks={{}}
-								step={10}
-								railColor="yellowgreen"
-							/>
-						</flex>
-
-						<flex>
-							<BorderControl
-								className="first-border"
-								label={__("Border", "fancy buttons")}
-								onChange={(val) => setAttributes({ iconBorder: val })}
-								value={attributes.iconBorder}
-								withSlider
-							/>
-						</flex>
-						<flex>
-							<BoxControl
-								label={__("Border Radius", "fancy buttons")}
-								values={attributes.borderRadiusThree}
-								onChange={(val) => setAttributes({ iconBorderRadius: val })}
-							/>
-						</flex>
-					</flex>
-				</flex>
-				<flex className="second-row">
-					<flex className="elements-container">
-						<flex className="elements">
-							<TextControl
-								label={__("Selector", "fancy buttons")}
-								className="selector-boxes"
-								autoComplete="off"
-								help="Choose a class or id to add to the container for further edits."
-								value={attributes.selector}
-								onChange={(val) => setAttributes({ selector: val })}
-							/>
-							<TextControl
-								label={__("Link 1", "fancy buttons")}
-								className="selector-boxes"
-								autoComplete="off"
-								help="Provide a link to the image that you want to use as a background."
-								value={attributes.linkOne}
-								onChange={(val) => setAttributes({ linkOne: val })}
-							/>
-							<TextControl
-								label={__("Link 2", "fancy buttons")}
-								className="selector-boxes"
-								autoComplete="off"
-								help="Provide a link to the image that you want to use as a background."
-								value={attributes.linkTwo}
-								onChange={(val) => setAttributes({ linkTwo: val })}
-							/>
-							<TextControl
-								label={__("Link 3", "fancy buttons")}
-								className="selector-boxes"
-								autoComplete="off"
-								help="Provide a link to the image that you want to use as a background."
-								value={attributes.linkTwo}
-								onChange={(val) => setAttributes({ linkThree: val })}
-							/>
-							<TextControl
-								label={__("Icon", "fancy buttons")}
-								className="selector-boxes"
-								autoComplete="off"
-								help="Choose an icon at https://fonts.google.com/icons. Enter 'cloud' if you want to use the cloud icon."
-								value={attributes.icon}
-								onChange={(val) => setAttributes({ icon: val })}
-							/>
-						</flex>
-						<flex className="button-prototype-container">
-							<flex className="layer" id="layerOne" style={layerOne}></flex>
-							<flex className="layer" id="layerTwo" style={layerTwo}></flex>
-							<flex className="layer" id="layerThree" style={layerThree}></flex>
-							<flex className="layer">
-								<i className="material-icons" style={iconStyle}>
-									{attributes.icon}
-								</i>
-							</flex>
-						</flex>
-					</flex>
-
-					<flex className="color-container">
-						<flex className="colorModule">
-							<ColorPicker
-								className="colorPicker"
-								label={__("Background Color", "fancy buttons")}
-								color={attributes.color}
-								onChange={(val) => setAttributes({ color: val })}
-								value={attributes.color}
-								defaultValue="#000"
-							/>
-						</flex>
-						<flex className="colorModule">
-							<ColorPicker
-								className="colorPicker"
-								label={__("Background Color", "fancy buttons")}
-								color={attributes.colorTwo}
-								onChange={(val) => setAttributes({ colorTwo: val })}
-								value={attributes.colorTwo}
-								defaultValue="#000"
-							/>
-						</flex>
-						<flex className="colorModule">
-							<ColorPicker
-								className="colorPicker"
-								label={__("Background Color", "fancy buttons")}
-								color={attributes.colorThree}
-								onChange={(val) => setAttributes({ colorThree: val })}
-								value={attributes.colorThree}
-								defaultValue="#000"
-							/>
-						</flex>
-						<flex className="colorModule">
-							<ColorPicker
-								className="colorPicker"
-								label={__("Icon Color", "fancy buttons")}
-								color={attributes.colorThree}
-								onChange={(val) => setAttributes({ iconColor: val })}
-								value={attributes.iconColor}
-								defaultValue="#2DB0B7"
-							/>
-						</flex>
-						<flex className="opacity-container">
+				<flex className="top-row">
+					<flex className="outer-layer-container">
+						<flex className="inner-layer-container">
 							<flex>
 								<RangeControl
 									label={__("Opacity 1", "fancy buttons")}
@@ -389,6 +122,62 @@ export default function Edit({ attributes, setAttributes }) {
 							</flex>
 							<flex>
 								<RangeControl
+									label={__("Height", "fancy buttons")}
+									onChange={(val) => setAttributes({ height: val })}
+									initialPosition={Number(attributes.height)}
+									max={300}
+									withInputField={false}
+									marks={{}}
+									step={10}
+									railColor="yellowgreen"
+								/>
+							</flex>
+							<flex>
+								<RangeControl
+									label={__("Width", "fancy buttons")}
+									onChange={(val) => setAttributes({ width: val })}
+									initialPosition={Number(attributes.width)}
+									value={attributes.width}
+									max={300}
+									withInputField={false}
+									marks={{}}
+									step={10}
+									railColor="yellowgreen"
+								/>
+							</flex>
+							<flex className="border-flex">
+								<BorderControl
+									className="first-border"
+									label={__("Border", "fancy buttons")}
+									onChange={(val) => setAttributes({ border: val })}
+									value={attributes.border}
+									withSlider
+								/>
+							</flex>
+							<flex className="hello">
+								<BoxControl
+									className="border-radius-component"
+									label={__("Border Radius", "fancy buttons")}
+									values={attributes.borderRadius}
+									onChange={(val) => setAttributes({ borderRadius: val })}
+								/>
+							</flex>
+						</flex>
+						<flex className="colorModule">
+							<ColorPicker
+								className="colorPicker"
+								label={__("Background Color", "fancy buttons")}
+								color={attributes.color}
+								onChange={(val) => setAttributes({ color: val })}
+								value={attributes.color}
+								defaultValue="#000"
+							/>
+						</flex>
+					</flex>
+					<flex className="outer-layer-container">
+						<flex className="inner-layer-container">
+							<flex>
+								<RangeControl
 									label={__("Opacity 2", "fancy buttons")}
 									onChange={(val) => setAttributes({ opacityTwo: val })}
 									initialPosition={Number(attributes.opacityTwo)}
@@ -399,6 +188,62 @@ export default function Edit({ attributes, setAttributes }) {
 									railColor="yellowgreen"
 								/>
 							</flex>
+							<flex>
+								<RangeControl
+									label={__("Height", "fancy buttons")}
+									onChange={(val) => setAttributes({ heightTwo: val })}
+									initialPosition={Number(attributes.heightTwo)}
+									max={300}
+									withInputField={false}
+									marks={{}}
+									step={10}
+									railColor="yellowgreen"
+								/>
+							</flex>
+							<flex>
+								<RangeControl
+									label={__("Width", "fancy buttons")}
+									onChange={(val) => setAttributes({ widthTwo: val })}
+									initialPosition={Number(attributes.widthTwo)}
+									value={attributes.widthTwo}
+									max={300}
+									withInputField={false}
+									marks={{}}
+									step={10}
+									railColor="yellowgreen"
+								/>
+							</flex>
+							<flex className="border-flex">
+								<BorderControl
+									className="first-border"
+									label={__("Border", "fancy buttons")}
+									onChange={(val) => setAttributes({ borderTwo: val })}
+									value={attributes.borderTwo}
+									withSlider
+								/>
+							</flex>
+							<flex className="hello">
+								<BoxControl
+									className="border-radius-component"
+									label={__("Border Radius", "fancy buttons")}
+									values={attributes.borderRadiusTwo}
+									onChange={(val) => setAttributes({ borderRadiusTwo: val })}
+								/>
+							</flex>
+						</flex>
+						<flex className="colorModule">
+							<ColorPicker
+								className="colorPicker"
+								label={__("Background Color", "fancy buttons")}
+								color={attributes.colorTwo}
+								onChange={(val) => setAttributes({ colorTwo: val })}
+								value={attributes.colorTwo}
+								defaultValue="#000"
+							/>
+						</flex>
+					</flex>
+					<flex className="outer-layer-container">
+						<flex className="inner-layer-container">
 							<flex>
 								<RangeControl
 									label={__("Opacity 3", "fancy buttons")}
@@ -413,6 +258,77 @@ export default function Edit({ attributes, setAttributes }) {
 							</flex>
 							<flex>
 								<RangeControl
+									label={__("Height", "fancy buttons")}
+									onChange={(val) => setAttributes({ heightThree: val })}
+									initialPosition={Number(attributes.heightThree)}
+									max={300}
+									withInputField={false}
+									marks={{}}
+									step={10}
+									railColor="yellowgreen"
+								/>
+							</flex>
+							<flex>
+								<RangeControl
+									label={__("Width", "fancy buttons")}
+									onChange={(val) => setAttributes({ widthThree: val })}
+									initialPosition={Number(attributes.widthThree)}
+									value={attributes.widthThree}
+									max={300}
+									withInputField={false}
+									marks={{}}
+									step={10}
+									railColor="yellowgreen"
+								/>
+							</flex>
+							<flex className="border-flex">
+								<BorderControl
+									className="first-border"
+									label={__("Border", "fancy buttons")}
+									onChange={(val) => setAttributes({ borderThree: val })}
+									value={attributes.borderThree}
+									withSlider
+								/>
+							</flex>
+							<flex className="hello">
+								<BoxControl
+									className="border-radius-component"
+									label={__("Border Radius", "fancy buttons")}
+									values={attributes.borderRadiusThree}
+									onChange={(val) => setAttributes({ borderRadiusThree: val })}
+								/>
+							</flex>
+						</flex>
+						<flex className="colorModule">
+							<ColorPicker
+								className="colorPicker"
+								label={__("Background Color", "fancy buttons")}
+								color={attributes.colorThree}
+								onChange={(val) => setAttributes({ colorThree: val })}
+								value={attributes.colorThree}
+								defaultValue="#000"
+							/>
+						</flex>
+					</flex>
+
+					<flex className="outer-layer-container">
+						<flex className="button-prototype-container">
+							<flex className="layer" id="layerOne" style={layerOne}></flex>
+							<flex className="layer" id="layerTwo" style={layerTwo}></flex>
+							<flex className="layer" id="layerThree" style={layerThree}></flex>
+							<flex className="layer">
+								<i className="material-icons" style={iconStyle}>
+									{attributes.icon}
+									{console.log("iconStyle: ", iconStyle)}
+								</i>
+							</flex>
+						</flex>
+					</flex>
+
+					<flex className="outer-layer-container">
+						<flex className="inner-layer-container">
+							<flex>
+								<RangeControl
 									label={__("Icon Opacity", "fancy buttons")}
 									onChange={(val) => setAttributes({ iconOpacity: val })}
 									initialPosition={Number(attributes.iconOpacity)}
@@ -423,6 +339,103 @@ export default function Edit({ attributes, setAttributes }) {
 									railColor="yellowgreen"
 								/>
 							</flex>
+							<flex>
+								<RangeControl
+									label={__("Icon Size", "fancy buttons")}
+									onChange={(val) => setAttributes({ iconSize: val })}
+									initialPosition={Number(attributes.iconSize)}
+									max={300}
+									withInputField={false}
+									marks={{}}
+									step={10}
+									railColor="yellowgreen"
+								/>
+							</flex>
+							<flex className="border-flex">
+								<BorderControl
+									className="first-border"
+									label={__("Border", "fancy buttons")}
+									onChange={(val) => setAttributes({ iconBorder: val })}
+									value={attributes.iconBorder}
+									withSlider
+								/>
+							</flex>
+							<flex>
+								<BoxControl
+									label={__("Border Radius", "fancy buttons")}
+									values={attributes.borderRadiusThree}
+									onChange={(val) => setAttributes({ iconBorderRadius: val })}
+								/>
+							</flex>
+						</flex>
+						<flex className="colorModule">
+							<ColorPicker
+								className="colorPicker"
+								label={__("Background Color", "fancy buttons")}
+								color={attributes.iconColor}
+								onChange={(val) => setAttributes({ iconColor: val })}
+								value={attributes.iconColor}
+								defaultValue="#000"
+							/>
+						</flex>
+					</flex>
+
+					<flex className="outer-layer-container">
+						<flex className="inner-layer-container">
+							<Tabs>
+								<TabList>
+									<Tab>Tab One</Tab>
+									<Tab>Tab Two</Tab>
+								</TabList>
+								<TabPanels>
+									<TabPanel>
+										<TextControl
+											label={__("Selector", "fancy buttons")}
+											className="selector-boxes"
+											autoComplete="off"
+											help="Choose a class or id to add to the container for further edits."
+											value={attributes.selector}
+											onChange={(val) => setAttributes({ selector: val })}
+										/>
+										<TextControl
+											label={__("Link 1", "fancy buttons")}
+											className="selector-boxes"
+											autoComplete="off"
+											help="Provide a link to the image that you want to use as a background."
+											value={attributes.linkOne}
+											onChange={(val) => setAttributes({ linkOne: val })}
+										/>
+										<TextControl
+											label={__("Link 2", "fancy buttons")}
+											className="selector-boxes"
+											autoComplete="off"
+											help="Provide a link to the image that you want to use as a background."
+											value={attributes.linkTwo}
+											onChange={(val) => setAttributes({ linkTwo: val })}
+										/>
+										<div id="page-one">1</div>
+									</TabPanel>
+									<TabPanel>
+										<TextControl
+											label={__("Link 3", "fancy buttons")}
+											className="selector-boxes"
+											autoComplete="off"
+											help="Provide a link to the image that you want to use as a background."
+											value={attributes.linkTwo}
+											onChange={(val) => setAttributes({ linkThree: val })}
+										/>
+										<TextControl
+											label={__("Icon", "fancy buttons")}
+											className="selector-boxes"
+											autoComplete="off"
+											help="Choose an icon at https://fonts.google.com/icons. Enter 'cloud' if you want to use the cloud icon."
+											value={attributes.icon}
+											onChange={(val) => setAttributes({ icon: val })}
+										/>
+										<div id="page-two">2</div>
+									</TabPanel>
+								</TabPanels>
+							</Tabs>
 						</flex>
 					</flex>
 				</flex>

@@ -182,6 +182,7 @@
 			"type": "string",
 			"source": "text",
 			"selector": ".back2top-icon-size"
+
 		},
 		"iconOpacity" : {
 			"type": "string",

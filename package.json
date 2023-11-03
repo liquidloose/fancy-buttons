@@ -16,5 +16,8 @@
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^26.11.0"
+	},
+	"dependencies": {
+		"@chakra-ui/react": "^2.8.1"
 	}
 }

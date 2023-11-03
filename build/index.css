@@ -6,6 +6,12 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+flex.second-row-container {
+  width: 300px;
+  background: var(--wp--preset--color--secondary);
+  padding: 2%;
+}
+
 .back2top-container {
   display: flex;
   flex-direction: column;
@@ -15,28 +21,108 @@
   border-color: gray;
   border-width: 3px;
   border-style: solid;
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1616px;
+  z-index: 500;
+  position: relative;
 }
-.back2top-container .top-rows {
+.back2top-container .top-row {
   background: gray;
+  padding-top: 2% !important;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
   border-top: 3px;
   border-color: var(--wp--preset--color--contrast);
   border-style: solid;
-  border-bottom: 1.5px;
   padding: 1%;
+  gap: 1%;
 }
-.back2top-container .top-rows .first-border {
+.back2top-container .top-row .elements-container {
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2%;
+}
+@media (max-width: 840px) {
+  .back2top-container .top-row .elements-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.back2top-container .top-row .elements-container .elements {
+  height: auto;
+  background: var(--wp--preset--color--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-width: 3px;
+  border-color: lightgray;
+  border-style: solid;
+  padding: 5%;
+  width: 34%;
+}
+@media (max-width: 840px) {
+  .back2top-container .top-row .elements-container .elements {
+    width: 100%;
+  }
+}
+.back2top-container .top-row .elements-container .elements input {
+  color: var(--wp--preset--color--primary);
+  background: white !important;
+  max-width: 150px !important;
+}
+.back2top-container .top-row .elements-container .elements .components-base-control__field {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.back2top-container .top-row .elements-container .button-prototype-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.back2top-container .top-row .elements-container .button-prototype-container .layer {
+  position: absolute;
+}
+.back2top-container .top-row flex.outer-layer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--wp--preset--color--secondary);
+  padding: 1%;
+  gap: 25px;
+  margin-bottom: 1%;
+  height: 410px;
+  width: 483px;
+}
+.back2top-container .top-row flex.outer-layer-container #layerOne {
+  position: absolute;
+}
+.back2top-container .top-row flex.outer-layer-container #layerTwo {
+  position: absolute;
+}
+.back2top-container .top-row flex.outer-layer-container #layerThree {
+  position: absolute;
+}
+.back2top-container .top-row .border-flex .first-border {
   margin-right: 11px !important;
+  margin-bottom: 23%;
 }
-.back2top-container .top-rows .top-rows-container {
+.back2top-container .top-row .border-flex .first-border .components-flex {
+  background: blue;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0%;
+}
+.back2top-container .top-row .top-rows-container {
   flex-direction: row !important;
   display: flex;
   justify-content: space-evenly;
@@ -46,24 +132,24 @@
   margin-bottom: -8px;
 }
 @media (max-width: 1120px) {
-  .back2top-container .top-rows .top-rows-container {
+  .back2top-container .top-row .top-rows-container {
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
   }
 }
 @media (max-width: 840px) {
-  .back2top-container .top-rows .top-rows-container flex:nth-of-type(1) {
+  .back2top-container .top-row .top-rows-container flex:nth-of-type(1) {
     margin-top: 5%;
   }
-  .back2top-container .top-rows .top-rows-container flex div#inspector-box-control-0 {
+  .back2top-container .top-row .top-rows-container flex div#inspector-box-control-0 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 300px;
     padding: 0px;
   }
-  .back2top-container .top-rows .top-rows-container flex div#inspector-box-control-1 {
+  .back2top-container .top-row .top-rows-container flex div#inspector-box-control-1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -71,7 +157,7 @@
     margin-top: 56px;
     padding: 0px;
   }
-  .back2top-container .top-rows .top-rows-container flex div#inspector-box-control-2 {
+  .back2top-container .top-row .top-rows-container flex div#inspector-box-control-2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -81,19 +167,19 @@
   }
 }
 @media (max-width: 1120px) {
-  .back2top-container .top-rows .top-rows-container flex div#inspector-box-control-0 {
+  .back2top-container .top-row .top-rows-container flex div#inspector-box-control-0 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 75px;
   }
-  .back2top-container .top-rows .top-rows-container flex div#inspector-box-control-1 {
+  .back2top-container .top-row .top-rows-container flex div#inspector-box-control-1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 75px;
   }
-  .back2top-container .top-rows .top-rows-container flex div#inspector-box-control-2 {
+  .back2top-container .top-row .top-rows-container flex div#inspector-box-control-2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -101,22 +187,21 @@
   }
 }
 @media (max-width: 1120px) {
-  .back2top-container .top-rows .top-rows-container flex .components-flex {
+  .back2top-container .top-row .top-rows-container flex .components-flex {
     flex-direction: column;
   }
 }
 .back2top-container .second-row {
   background: lightgray;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
 }
 .back2top-container .second-row .elements-container {
   color: white;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: flex-start;
 }
 @media (max-width: 840px) {
   .back2top-container .second-row .elements-container {
@@ -185,10 +270,11 @@
     padding: 0px;
   }
 }
-.back2top-container .color-container flex.opacity-container {
+.back2top-container .color-container flex.inner-layer-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  max-width: 54%;
   color: white;
   background: var(--wp--preset--color--primary);
   border-style: solid;
@@ -221,6 +307,7 @@ input#inspector-text-control-3 {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
+  margin-right: auto;
 }
 
 .colorPicker {
@@ -233,6 +320,97 @@ input#inspector-text-control-3 {
 
 .components-flex-item.css-qcm38l.e19lxcc00 {
   display: flex;
+}
+
+.chakra-tabs__tab-panels.css-8atqhb {
+  height: 80%;
+  background: white;
+}
+
+.chakra-tabs__tab-panels.css-8atqhb {
+  max-width: 78%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 510px;
+  height: 310px;
+}
+
+.chakra-tabs__tablist.css-k008qs {
+  width: 510px;
+  justify-content: center;
+}
+
+.css-8atqhb {
+  width: auto;
+}
+
+.css-8atqhb {
+  width: auto;
+}
+
+div#tabs-\:ra\:--tabpanel-1 {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chakra-tabs__tab-panels.css-8atqhb {
+  max-width: 78%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button#tabs-\:ra\:--tab-0 {
+  background: var(--wp--preset--color--tertiary);
+  color: var(--wp--preset--color--contrast);
+}
+
+button#tabs-\:ra\:--tab-0:hover {
+  background: var(--wp--preset--color--contrast);
+  color: var(--wp--preset--color--tertiary);
+  cursor: grab;
+}
+
+button#tabs-\:ra\:--tab-1 {
+  background: var(--wp--preset--color--tertiary);
+  color: var(--wp--preset--color--contrast);
+}
+
+button#tabs-\:ra\:--tab-1:hover {
+  background: var(--wp--preset--color--contrast);
+  color: var(--wp--preset--color--tertiary);
+  cursor: grab;
+}
+
+div#tabs-\:ra\:--tabpanel-0 {
+  padding: 5%;
+  background: var(--wp--preset--color--secondary);
+}
+
+div#tabs-\:ra\:--tabpanel-1 {
+  padding: 5%;
+  background: var(--wp--preset--color--secondary);
+}
+
+#page-one {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#page-two {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 86px;
+}
+
+input#inspector-text-control-2 {
+  background: var(--wp--preset--color--contrast);
+  color: black;
+}
+
+input#inspector-text-control-3 {
+  background: var(--wp--preset--color--contrast);
+  color: black;
 }
 
 /*# sourceMappingURL=index.css.map*/
