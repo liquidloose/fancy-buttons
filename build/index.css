@@ -27,8 +27,9 @@ flex.second-row-container {
   z-index: 500;
   position: relative;
 }
-.back2top-container .top-row {
+.back2top-container .fancy-buttons-top-row {
   background: gray;
+  color: white;
   padding-top: 2% !important;
   display: flex;
   align-items: center;
@@ -41,20 +42,20 @@ flex.second-row-container {
   padding: 1%;
   gap: 1%;
 }
-.back2top-container .top-row .elements-container {
+.back2top-container .fancy-buttons-top-row .elements-container {
   color: white;
   display: flex;
   justify-content: flex-start;
   gap: 2%;
 }
 @media (max-width: 840px) {
-  .back2top-container .top-row .elements-container {
+  .back2top-container .fancy-buttons-top-row .elements-container {
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
 }
-.back2top-container .top-row .elements-container .elements {
+.back2top-container .fancy-buttons-top-row .elements-container .elements {
   height: auto;
   background: var(--wp--preset--color--primary);
   display: flex;
@@ -68,31 +69,31 @@ flex.second-row-container {
   width: 34%;
 }
 @media (max-width: 840px) {
-  .back2top-container .top-row .elements-container .elements {
+  .back2top-container .fancy-buttons-top-row .elements-container .elements {
     width: 100%;
   }
 }
-.back2top-container .top-row .elements-container .elements input {
+.back2top-container .fancy-buttons-top-row .elements-container .elements input {
   color: var(--wp--preset--color--primary);
   background: white !important;
   max-width: 150px !important;
 }
-.back2top-container .top-row .elements-container .elements .components-base-control__field {
+.back2top-container .fancy-buttons-top-row .elements-container .elements .components-base-control__field {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-.back2top-container .top-row .elements-container .button-prototype-container {
+.back2top-container .fancy-buttons-top-row .elements-container .button-prototype-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: auto;
   margin-left: auto;
 }
-.back2top-container .top-row .elements-container .button-prototype-container .layer {
+.back2top-container .fancy-buttons-top-row .elements-container .button-prototype-container .layer {
   position: absolute;
 }
-.back2top-container .top-row flex.outer-layer-container {
+.back2top-container .fancy-buttons-top-row flex.outer-layer-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,26 +104,26 @@ flex.second-row-container {
   height: 410px;
   width: 483px;
 }
-.back2top-container .top-row flex.outer-layer-container #layerOne {
+.back2top-container .fancy-buttons-top-row flex.outer-layer-container #layerOne {
   position: absolute;
 }
-.back2top-container .top-row flex.outer-layer-container #layerTwo {
+.back2top-container .fancy-buttons-top-row flex.outer-layer-container #layerTwo {
   position: absolute;
 }
-.back2top-container .top-row flex.outer-layer-container #layerThree {
+.back2top-container .fancy-buttons-top-row flex.outer-layer-container #layerThree {
   position: absolute;
 }
-.back2top-container .top-row .border-flex .first-border {
+.back2top-container .fancy-buttons-top-row .border-flex .first-border {
   margin-right: 11px !important;
   margin-bottom: 23%;
 }
-.back2top-container .top-row .border-flex .first-border .components-flex {
+.back2top-container .fancy-buttons-top-row .border-flex .first-border .components-flex {
   background: blue;
   display: flex;
   flex-direction: column;
   margin-bottom: 0%;
 }
-.back2top-container .top-row .top-rows-container {
+.back2top-container .fancy-buttons-top-row .top-rows-container {
   flex-direction: row !important;
   display: flex;
   justify-content: space-evenly;
@@ -132,24 +133,24 @@ flex.second-row-container {
   margin-bottom: -8px;
 }
 @media (max-width: 1120px) {
-  .back2top-container .top-row .top-rows-container {
+  .back2top-container .fancy-buttons-top-row .top-rows-container {
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
   }
 }
 @media (max-width: 840px) {
-  .back2top-container .top-row .top-rows-container flex:nth-of-type(1) {
+  .back2top-container .fancy-buttons-top-row .top-rows-container flex:nth-of-type(1) {
     margin-top: 5%;
   }
-  .back2top-container .top-row .top-rows-container flex div#inspector-box-control-0 {
+  .back2top-container .fancy-buttons-top-row .top-rows-container flex div#inspector-box-control-0 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 300px;
     padding: 0px;
   }
-  .back2top-container .top-row .top-rows-container flex div#inspector-box-control-1 {
+  .back2top-container .fancy-buttons-top-row .top-rows-container flex div#inspector-box-control-1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -157,7 +158,7 @@ flex.second-row-container {
     margin-top: 56px;
     padding: 0px;
   }
-  .back2top-container .top-row .top-rows-container flex div#inspector-box-control-2 {
+  .back2top-container .fancy-buttons-top-row .top-rows-container flex div#inspector-box-control-2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -167,19 +168,19 @@ flex.second-row-container {
   }
 }
 @media (max-width: 1120px) {
-  .back2top-container .top-row .top-rows-container flex div#inspector-box-control-0 {
+  .back2top-container .fancy-buttons-top-row .top-rows-container flex div#inspector-box-control-0 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 75px;
   }
-  .back2top-container .top-row .top-rows-container flex div#inspector-box-control-1 {
+  .back2top-container .fancy-buttons-top-row .top-rows-container flex div#inspector-box-control-1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 75px;
   }
-  .back2top-container .top-row .top-rows-container flex div#inspector-box-control-2 {
+  .back2top-container .fancy-buttons-top-row .top-rows-container flex div#inspector-box-control-2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -187,7 +188,7 @@ flex.second-row-container {
   }
 }
 @media (max-width: 1120px) {
-  .back2top-container .top-row .top-rows-container flex .components-flex {
+  .back2top-container .fancy-buttons-top-row .top-rows-container flex .components-flex {
     flex-direction: column;
   }
 }
@@ -411,6 +412,21 @@ input#inspector-text-control-2 {
 input#inspector-text-control-3 {
   background: var(--wp--preset--color--contrast);
   color: black;
+}
+
+.components-base-control.selector-boxes.css-qy3gpb.ej5x27r4 p {
+  color: inherit;
+}
+
+.css-qnhd10 {
+  padding: 16px 12px 20px 9px !important;
+}
+
+@media screen and (max-width: 782px) {
+  .chakra-tabs__tablist.css-k008qs {
+    margin-top: -48px;
+    max-width: 483px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map*/

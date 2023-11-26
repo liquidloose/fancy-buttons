@@ -86,8 +86,9 @@ flex.second-row-container {
 	position: relative;
 
 
-	.top-row {
+	.fancy-buttons-top-row {
 		background: gray;
+		color: white;
 		padding-top: 2% !important;
 		display: flex;
 		align-items: center;
@@ -510,4 +511,20 @@ input#inspector-text-control-2 {
 input#inspector-text-control-3 {
     background: var(--wp--preset--color--contrast);
     color: black;
+}
+
+
+.components-base-control.selector-boxes.css-qy3gpb.ej5x27r4 p {
+    color: inherit;
+}
+
+.css-qnhd10 {
+    padding: calc(16px) calc(12px) calc(20px) calc(9px) !important;
+}
+
+@media screen and (max-width: 782px) {
+	.chakra-tabs__tablist.css-k008qs {
+  		margin-top: -48px;
+		max-width: 483px;
+	}
 }

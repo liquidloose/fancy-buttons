@@ -105,7 +105,7 @@ export default function Edit({ attributes, setAttributes }) {
 	return (
 		<flex {...useBlockProps()}>
 			<flex className="back2top-container">
-				<flex className="top-row">
+				<flex className="fancy-buttons-top-row">
 					<flex className="outer-layer-container">
 						<flex className="inner-layer-container">
 							<flex>
@@ -413,7 +413,6 @@ export default function Edit({ attributes, setAttributes }) {
 											value={attributes.linkTwo}
 											onChange={(val) => setAttributes({ linkTwo: val })}
 										/>
-										<div id="page-one">1</div>
 									</TabPanel>
 									<TabPanel>
 										<TextControl
@@ -432,7 +431,6 @@ export default function Edit({ attributes, setAttributes }) {
 											value={attributes.icon}
 											onChange={(val) => setAttributes({ icon: val })}
 										/>
-										<div id="page-two">2</div>
 									</TabPanel>
 								</TabPanels>
 							</Tabs>
