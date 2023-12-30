@@ -424,7 +424,6 @@ input#inspector-text-control-3 {
 
 .chakra-tabs__tab-panels.css-8atqhb {
     height: 80%;
-    background: white;
 }
 
 .chakra-tabs__tab-panels.css-8atqhb {
@@ -433,6 +432,17 @@ input#inspector-text-control-3 {
     margin-right: auto;
     width: 510px;
     height: 310px;
+}
+
+.chakra-tabs__tablist.css-k008qs button {
+    color: white;
+    background: var(--wp--preset--color--tertiary);
+}
+
+.chakra-tabs__tablist.css-k008qs button:hover {
+    color: var(--wp--preset--color--tertiary);
+    background: white;
+	cursor: grab;
 }
 
 .chakra-tabs__tablist.css-k008qs {
@@ -527,4 +537,10 @@ input#inspector-text-control-3 {
   		margin-top: -48px;
 		max-width: 483px;
 	}
+}
+
+
+flex.rl-panel {
+    display: flex;
+    justify-content: flex-end;
 }

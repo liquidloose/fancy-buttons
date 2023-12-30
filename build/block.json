@@ -192,7 +192,7 @@
   "supports": {
     "html": true
   },
-  "textdomain": "gutenpride",
+  "textdomain": "fancy-buttons",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css"

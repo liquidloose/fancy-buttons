@@ -2110,6 +2110,7 @@ function Edit({
     borderStyle: attributes.iconBorder.style,
     borderWidth: attributes.iconBorder.width
   };
+  function tabButtons() {}
   console.log("attributes.iconSize: ", attributes.iconSize);
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
@@ -2426,9 +2427,11 @@ function Edit({
     onChange: val => setAttributes({
       linkTwo: val
     })
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    id: "page-one"
-  }, "1")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_10__.TabPanel, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", {
+    className: "rl-panel"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, "1"))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_10__.TabPanel, {
+    className: "rl-panel-two"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Link 3", "fancy buttons"),
     className: "selector-boxes",
     autoComplete: "off",
@@ -2446,9 +2449,9 @@ function Edit({
     onChange: val => setAttributes({
       icon: val
     })
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    id: "page-two"
-  }, "2")))))))));
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", {
+    className: "rl-panel"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", null, "2"))))))))));
 }
 
 /***/ }),
@@ -17511,7 +17514,7 @@ function combine (array, callback) {
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/fancy-buttons","version":"0.1.0","title":"Fancy Buttons","category":"text","icon":"flag","description":"A Gutenberg block that helps you make a back-to-top button","attributes":{"selector":{"type":"string","source":"text","selector":".back2top-selector"},"linkOne":{"type":"string","source":"text","selector":".back2top-link"},"linkTwo":{"type":"string","source":"text","selector":".back2top-link-two"},"linkThree":{"type":"string","source":"text","selector":".back2top-link-three"},"icon":{"type":"string","source":"text","selector":".back2top-icon"},"height":{"type":"string","source":"text","selector":".back2top-height"},"width":{"type":"string","source":"text","selector":".back2top-width"},"opacity":{"type":"string","source":"text","selector":".back2top-opacity"},"border":{"type":"object","default":{"color":"","style":"","width":""},"selector":".back2top-border"},"borderRadius":{"type":"object","default":{"top":"0px","left":"0px","right":"0px","bottom":"0px"},"selector":".back2top-border"},"heightTwo":{"type":"string","source":"text","selector":".back2top-height-two"},"widthTwo":{"type":"string","source":"text","selector":".back2top-width-two"},"opacityTwo":{"type":"string","source":"text","selector":".back2top-opacity-two"},"borderTwo":{"type":"object","default":{"color":"","style":"","width":""},"selector":".back2top-border-two"},"borderRadiusTwo":{"type":"object","default":{"top":"0px","left":"0px","right":"0px","bottom":"0px"},"selector":".back2top-border-two"},"heightThree":{"type":"string","source":"text","selector":".back2top-height-three"},"opacityThree":{"type":"string","source":"text","selector":".back2top-opacity-three"},"widthThree":{"type":"string","source":"text","selector":".back2top-width-three"},"borderThree":{"type":"object","default":{"color":"","style":"","width":""},"selector":".back2top-border-three"},"iconBorder":{"type":"object","default":{"color":"","style":"","width":""},"selector":".back2top-iconBorder"},"borderRadiusThree":{"type":"object","default":{"top":"0px","left":"0px","right":"0px","bottom":"0px"},"selector":".back2top-border-three"},"iconBorderRadius":{"type":"object","default":{"top":"0px","left":"0px","right":"0px","bottom":"0px"},"selector":".back2top-icon-border-radius"},"color":{"type":"string","source":"text","selector":".back2top-color","default":"#2DB0B7"},"colorTwo":{"type":"string","source":"text","selector":".back2top-color-two","default":"#2DB0B7"},"colorThree":{"type":"string","source":"text","selector":".back2top-color-three","default":"#2DB0B7"},"iconColor":{"type":"string","source":"text","selector":".back2top-icon-color","default":"#2DB0B7"},"iconSize":{"type":"string","source":"text","selector":".back2top-icon-size"},"iconOpacity":{"type":"string","source":"text","selector":".back2top-icon-opacity"}},"supports":{"html":true},"textdomain":"gutenpride","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/fancy-buttons","version":"0.1.0","title":"Fancy Buttons","category":"text","icon":"flag","description":"A Gutenberg block that helps you make a back-to-top button","attributes":{"selector":{"type":"string","source":"text","selector":".back2top-selector"},"linkOne":{"type":"string","source":"text","selector":".back2top-link"},"linkTwo":{"type":"string","source":"text","selector":".back2top-link-two"},"linkThree":{"type":"string","source":"text","selector":".back2top-link-three"},"icon":{"type":"string","source":"text","selector":".back2top-icon"},"height":{"type":"string","source":"text","selector":".back2top-height"},"width":{"type":"string","source":"text","selector":".back2top-width"},"opacity":{"type":"string","source":"text","selector":".back2top-opacity"},"border":{"type":"object","default":{"color":"","style":"","width":""},"selector":".back2top-border"},"borderRadius":{"type":"object","default":{"top":"0px","left":"0px","right":"0px","bottom":"0px"},"selector":".back2top-border"},"heightTwo":{"type":"string","source":"text","selector":".back2top-height-two"},"widthTwo":{"type":"string","source":"text","selector":".back2top-width-two"},"opacityTwo":{"type":"string","source":"text","selector":".back2top-opacity-two"},"borderTwo":{"type":"object","default":{"color":"","style":"","width":""},"selector":".back2top-border-two"},"borderRadiusTwo":{"type":"object","default":{"top":"0px","left":"0px","right":"0px","bottom":"0px"},"selector":".back2top-border-two"},"heightThree":{"type":"string","source":"text","selector":".back2top-height-three"},"opacityThree":{"type":"string","source":"text","selector":".back2top-opacity-three"},"widthThree":{"type":"string","source":"text","selector":".back2top-width-three"},"borderThree":{"type":"object","default":{"color":"","style":"","width":""},"selector":".back2top-border-three"},"iconBorder":{"type":"object","default":{"color":"","style":"","width":""},"selector":".back2top-iconBorder"},"borderRadiusThree":{"type":"object","default":{"top":"0px","left":"0px","right":"0px","bottom":"0px"},"selector":".back2top-border-three"},"iconBorderRadius":{"type":"object","default":{"top":"0px","left":"0px","right":"0px","bottom":"0px"},"selector":".back2top-icon-border-radius"},"color":{"type":"string","source":"text","selector":".back2top-color","default":"#2DB0B7"},"colorTwo":{"type":"string","source":"text","selector":".back2top-color-two","default":"#2DB0B7"},"colorThree":{"type":"string","source":"text","selector":".back2top-color-three","default":"#2DB0B7"},"iconColor":{"type":"string","source":"text","selector":".back2top-icon-color","default":"#2DB0B7"},"iconSize":{"type":"string","source":"text","selector":".back2top-icon-size"},"iconOpacity":{"type":"string","source":"text","selector":".back2top-icon-opacity"}},"supports":{"html":true},"textdomain":"fancy-buttons","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 
