@@ -167,7 +167,7 @@ flex.second-row-container {
     		padding: 1%;
 			gap: 25px;
 			margin-bottom: 1%;
-			height: 410px;
+			height: 445px;
 			width: 483px;
 			
 			#layerOne {
@@ -543,4 +543,9 @@ input#inspector-text-control-3 {
 flex.rl-panel {
     display: flex;
     justify-content: flex-end;
+}
+
+i.material-icons {
+    margin-top: 50%;
+    margin-bottom: 50%;
 }

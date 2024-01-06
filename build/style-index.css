@@ -17,4 +17,22 @@
   font-size: 32px;
 }
 
+flex.outer-layer-container:hover {
+  cursor: grab;
+}
+
+i.material-icons {
+  margin-top: 50%;
+  margin-bottom: 50%;
+}
+
+.wp-block-create-block-fancy-buttons {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.show {
+  opacity: 1;
+}
+
 /*# sourceMappingURL=style-index.css.map*/

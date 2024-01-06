@@ -26,7 +26,14 @@ function create_block_fancy_buttons_block_init() {
 }
 add_action('init', 'create_block_fancy_buttons_block_init');
 
-function enqueue_remix_icon_css() {
-	wp_enqueue_style('remix-icon-css', 'https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css', array(), null);
+function enqueue_plugin_files() {
+	//wp_enqueue_style('remix-icon-css', 'https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css', array(), null);
+	wp_enqueue_script('fancy-buttons', plugin_dir_url(__FILE__) . 'js/fancy-buttons.js');
 }
-add_action('wp_enqueue_scripts', 'enqueue_remix_icon_css');
+add_action('wp_enqueue_scripts', 'enqueue_plugin_files');
+
+function admin_enqueue_plugin_files() {
+	//wp_enqueue_style('remix-icon-css', 'https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css', array(), null);
+	wp_enqueue_script('fancy-buttons', plugin_dir_url(__FILE__) . 'js/fancy-buttons.js');
+}
+add_action('admin_enqueue_scripts', 'admin_enqueue_plugin_files');
