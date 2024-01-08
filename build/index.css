@@ -6,9 +6,36 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+/*
+	{
+					"color": "#888888",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#FFFFFF",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#293136",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#3A444A",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#445058",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				}
+*/
 flex.second-row-container {
   width: 300px;
-  background: var(--wp--preset--color--secondary);
+  background: #3A444A;
   padding: 2%;
 }
 
@@ -16,7 +43,7 @@ flex.second-row-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: var(--wp--preset--color--primary);
+  background-color: #293136;
   color: black;
   border-color: gray;
   border-width: 3px;
@@ -37,7 +64,7 @@ flex.second-row-container {
   flex-wrap: wrap;
   flex-direction: row;
   border-top: 3px;
-  border-color: var(--wp--preset--color--contrast);
+  border-color: #FFFFFF;
   border-style: solid;
   padding: 1%;
   gap: 1%;
@@ -57,7 +84,7 @@ flex.second-row-container {
 }
 .back2top-container .fancy-buttons-top-row .elements-container .elements {
   height: auto;
-  background: var(--wp--preset--color--primary);
+  background: #293136;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,7 +101,7 @@ flex.second-row-container {
   }
 }
 .back2top-container .fancy-buttons-top-row .elements-container .elements input {
-  color: var(--wp--preset--color--primary);
+  color: #293136;
   background: white !important;
   max-width: 150px !important;
 }
@@ -97,7 +124,7 @@ flex.second-row-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--wp--preset--color--secondary);
+  background: #3A444A;
   padding: 1%;
   gap: 25px;
   margin-bottom: 1%;
@@ -106,12 +133,15 @@ flex.second-row-container {
 }
 .back2top-container .fancy-buttons-top-row flex.outer-layer-container #layerOne {
   position: absolute;
+  background-size: contain !important;
 }
 .back2top-container .fancy-buttons-top-row flex.outer-layer-container #layerTwo {
   position: absolute;
+  background-size: contain !important;
 }
 .back2top-container .fancy-buttons-top-row flex.outer-layer-container #layerThree {
   position: absolute;
+  background-size: contain !important;
 }
 .back2top-container .fancy-buttons-top-row .border-flex .first-border {
   margin-right: 11px !important;
@@ -213,7 +243,7 @@ flex.second-row-container {
 }
 .back2top-container .second-row .elements-container .elements {
   height: auto;
-  background: var(--wp--preset--color--primary);
+  background: #293136;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -230,7 +260,7 @@ flex.second-row-container {
   }
 }
 .back2top-container .second-row .elements-container .elements input {
-  color: var(--wp--preset--color--primary);
+  color: #293136;
   background: white !important;
   max-width: 150px !important;
 }
@@ -251,7 +281,7 @@ flex.second-row-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border-color: var(--wp--preset--color--contrast);
+  border-color: #FFFFFF;
   border-style: solid;
   border-width: 3px;
   margin-left: auto;
@@ -277,7 +307,7 @@ flex.second-row-container {
   justify-content: space-evenly;
   max-width: 54%;
   color: white;
-  background: var(--wp--preset--color--primary);
+  background: #293136;
   border-style: solid;
   border-color: gray;
   border-width: 3px;
@@ -337,11 +367,11 @@ input#inspector-text-control-3 {
 
 .chakra-tabs__tablist.css-k008qs button {
   color: white;
-  background: var(--wp--preset--color--tertiary);
+  background: #445058;
 }
 
 .chakra-tabs__tablist.css-k008qs button:hover {
-  color: var(--wp--preset--color--tertiary);
+  color: #445058;
   background: white;
   cursor: grab;
 }
@@ -372,35 +402,35 @@ div#tabs-\:ra\:--tabpanel-1 {
 }
 
 button#tabs-\:ra\:--tab-0 {
-  background: var(--wp--preset--color--tertiary);
-  color: var(--wp--preset--color--contrast);
+  background: #445058;
+  color: #FFFFFF;
 }
 
 button#tabs-\:ra\:--tab-0:hover {
-  background: var(--wp--preset--color--contrast);
-  color: var(--wp--preset--color--tertiary);
+  background: #FFFFFF;
+  color: #445058;
   cursor: grab;
 }
 
 button#tabs-\:ra\:--tab-1 {
-  background: var(--wp--preset--color--tertiary);
-  color: var(--wp--preset--color--contrast);
+  background: #445058;
+  color: #FFFFFF;
 }
 
 button#tabs-\:ra\:--tab-1:hover {
-  background: var(--wp--preset--color--contrast);
-  color: var(--wp--preset--color--tertiary);
+  background: #FFFFFF;
+  color: #445058;
   cursor: grab;
 }
 
 div#tabs-\:ra\:--tabpanel-0 {
   padding: 5%;
-  background: var(--wp--preset--color--secondary);
+  background: #3A444A;
 }
 
 div#tabs-\:ra\:--tabpanel-1 {
   padding: 5%;
-  background: var(--wp--preset--color--secondary);
+  background: #3A444A;
 }
 
 #page-one {
@@ -415,12 +445,12 @@ div#tabs-\:ra\:--tabpanel-1 {
 }
 
 input#inspector-text-control-2 {
-  background: var(--wp--preset--color--contrast);
+  background: #FFFFFF;
   color: black;
 }
 
 input#inspector-text-control-3 {
-  background: var(--wp--preset--color--contrast);
+  background: #FFFFFF;
   color: black;
 }
 
@@ -446,6 +476,25 @@ flex.rl-panel {
 i.material-icons {
   margin-top: 50%;
   margin-bottom: 50%;
+}
+
+.panel-numbers {
+  display: flex;
+  justify-content: flex-end;
+}
+
+input {
+  caret-color: transparent;
+}
+
+input::-moz-selection {
+  color: white;
+  background: #3A444A;
+}
+
+input::selection {
+  color: white;
+  background: #3A444A;
 }
 
 /*# sourceMappingURL=index.css.map*/

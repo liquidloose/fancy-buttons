@@ -1,7 +1,7 @@
 .wp-block-create-block-fancy-buttons {
     opacity: 0;
-    transition: all 1.25s;
-    transition: all .50s allow-discrete;
+    transition: all .10s;
+    transition: all .10s allow-discrete;
 }
 
 .show {

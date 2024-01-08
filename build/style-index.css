@@ -26,13 +26,19 @@ i.material-icons {
   margin-bottom: 50%;
 }
 
-.wp-block-create-block-fancy-buttons {
-  opacity: 1;
-  transition: opacity 1s;
+#layerOne {
+  position: absolute;
+  background-size: contain !important;
 }
 
-.hidden {
-  opacity: 0;
+#layerTwo {
+  position: absolute;
+  background-size: contain !important;
+}
+
+#layerThree {
+  position: absolute;
+  background-size: contain !important;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

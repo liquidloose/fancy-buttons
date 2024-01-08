@@ -2400,42 +2400,6 @@ function Edit({
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", {
     className: "inner-layer-container"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_6__.Tabs, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_7__.TabList, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_8__.Tab, null, "Tab One"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_8__.Tab, null, "Tab Two")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_9__.TabPanels, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_10__.TabPanel, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Selector", "fancy buttons"),
-    className: "selector-boxes",
-    autoComplete: "off",
-    help: "Choose a class or id to add to the container for further edits.",
-    value: attributes.selector,
-    onChange: val => setAttributes({
-      selector: val
-    })
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Link 1", "fancy buttons"),
-    className: "selector-boxes",
-    autoComplete: "off",
-    help: "Provide a link to the image that you want to use as a background.",
-    value: attributes.linkOne,
-    onChange: val => setAttributes({
-      linkOne: val
-    })
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Link 2", "fancy buttons"),
-    className: "selector-boxes",
-    autoComplete: "off",
-    help: "Provide a link to the image that you want to use as a background.",
-    value: attributes.linkTwo,
-    onChange: val => setAttributes({
-      linkTwo: val
-    })
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_10__.TabPanel, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Link 3", "fancy buttons"),
-    className: "selector-boxes",
-    autoComplete: "off",
-    help: "Provide a link to the image that you want to use as a background.",
-    value: attributes.linkThree,
-    onChange: val => setAttributes({
-      linkThree: val
-    })
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Icon", "fancy buttons"),
     className: "selector-boxes",
     autoComplete: "off",
@@ -2444,7 +2408,38 @@ function Edit({
     onChange: val => setAttributes({
       icon: val
     })
-  })))))))));
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Link 1", "fancy buttons"),
+    className: "selector-boxes",
+    autoComplete: "off",
+    help: "Provide an https link to the image that you want to use as a background.",
+    value: attributes.linkOne,
+    onChange: val => setAttributes({
+      linkOne: val
+    })
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "panel-numbers"
+  }, "1")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_10__.TabPanel, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Link 2", "fancy buttons"),
+    className: "selector-boxes",
+    autoComplete: "off",
+    help: "Provide an https link to the image that you want to use as a background.",
+    value: attributes.linkTwo,
+    onChange: val => setAttributes({
+      linkTwo: val
+    })
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Link 3", "fancy buttons"),
+    className: "selector-boxes",
+    autoComplete: "off",
+    help: "Provide an https link to the image that you want to use as a background.",
+    value: attributes.linkThree,
+    onChange: val => setAttributes({
+      linkThree: val
+    })
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "panel-numbers"
+  }, "2")))))))));
 }
 
 /***/ }),

@@ -391,40 +391,6 @@ export default function Edit({ attributes, setAttributes }) {
                 <TabPanels>
                   <TabPanel>
                     <TextControl
-                      label={__("Selector", "fancy buttons")}
-                      className="selector-boxes"
-                      autoComplete="off"
-                      help="Choose a class or id to add to the container for further edits."
-                      value={attributes.selector}
-                      onChange={(val) => setAttributes({ selector: val })}
-                    />
-                    <TextControl
-                      label={__("Link 1", "fancy buttons")}
-                      className="selector-boxes"
-                      autoComplete="off"
-                      help="Provide a link to the image that you want to use as a background."
-                      value={attributes.linkOne}
-                      onChange={(val) => setAttributes({ linkOne: val })}
-                    />
-                    <TextControl
-                      label={__("Link 2", "fancy buttons")}
-                      className="selector-boxes"
-                      autoComplete="off"
-                      help="Provide a link to the image that you want to use as a background."
-                      value={attributes.linkTwo}
-                      onChange={(val) => setAttributes({ linkTwo: val })}
-                    />
-                  </TabPanel>
-                  <TabPanel>
-                    <TextControl
-                      label={__("Link 3", "fancy buttons")}
-                      className="selector-boxes"
-                      autoComplete="off"
-                      help="Provide a link to the image that you want to use as a background."
-                      value={attributes.linkThree}
-                      onChange={(val) => setAttributes({ linkThree: val })}
-                    />
-                    <TextControl
                       label={__("Icon", "fancy buttons")}
                       className="selector-boxes"
                       autoComplete="off"
@@ -432,6 +398,34 @@ export default function Edit({ attributes, setAttributes }) {
                       value={attributes.icon}
                       onChange={(val) => setAttributes({ icon: val })}
                     />
+                    <TextControl
+                      label={__("Link 1", "fancy buttons")}
+                      className="selector-boxes"
+                      autoComplete="off"
+                      help="Provide an https link to the image that you want to use as a background."
+                      value={attributes.linkOne}
+                      onChange={(val) => setAttributes({ linkOne: val })}
+                    />
+                    <div className="panel-numbers">1</div>
+                  </TabPanel>
+                  <TabPanel>
+                    <TextControl
+                      label={__("Link 2", "fancy buttons")}
+                      className="selector-boxes"
+                      autoComplete="off"
+                      help="Provide an https link to the image that you want to use as a background."
+                      value={attributes.linkTwo}
+                      onChange={(val) => setAttributes({ linkTwo: val })}
+                    />
+                    <TextControl
+                      label={__("Link 3", "fancy buttons")}
+                      className="selector-boxes"
+                      autoComplete="off"
+                      help="Provide an https link to the image that you want to use as a background."
+                      value={attributes.linkThree}
+                      onChange={(val) => setAttributes({ linkThree: val })}
+                    />
+                    <div className="panel-numbers">2</div>
                   </TabPanel>
                 </TabPanels>
               </Tabs>
