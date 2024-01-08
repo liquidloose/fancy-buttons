@@ -10,24 +10,21 @@ document.addEventListener("DOMContentLoaded", () => {
     ".wp-block-create-block-fancy-buttons"
   );
 
-  let scrollMarker = false;
-  console.log("true");
   addEventListener("scroll", (event) => {
-    console.log(scrollY);
+    console.log(event);
+    console.log(window.scrollY);
 
-    if (scrollY < 300 && scrollMarker == true) {
-      scrollMarker = false;
-      console.log("less");
-      fancyButton.classList.toggle("show");
+    if (window.scrollY < 80) {
+      fancyButton.classList.remove("show");
     }
-    if (scrollY > 300 && scrollMarker == false) {
-      scrollMarker = true;
-      fancyButton.classList.toggle("show");
+    if (window.scrollY > 80) {
+      fancyButton.classList.add("show");
     }
   });
 
   fancyButton.addEventListener("click", (event) => {
-    if (scrollY > 300) {
+    console.log("click");
+    if (window.scrollY > 100) {
       setTimeout(() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }, 200);
