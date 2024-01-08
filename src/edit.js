@@ -101,11 +101,10 @@ export default function Edit({ attributes, setAttributes }) {
     borderWidth: attributes.iconBorder.width,
   };
 
-  function tabButtons() {}
+  console.log("attributes.border", attributes.border);
 
-  console.log("attributes.iconSize: ", attributes.iconSize);
   return (
-    <flex {...useBlockProps()}>
+    <div {...useBlockProps()}>
       <flex className="back2top-container">
         <flex className="fancy-buttons-top-row">
           <flex className="outer-layer-container">
@@ -415,17 +414,14 @@ export default function Edit({ attributes, setAttributes }) {
                       value={attributes.linkTwo}
                       onChange={(val) => setAttributes({ linkTwo: val })}
                     />
-                    <flex className="rl-panel">
-                      <flex>1</flex>
-                    </flex>
                   </TabPanel>
-                  <TabPanel className="rl-panel-two">
+                  <TabPanel>
                     <TextControl
                       label={__("Link 3", "fancy buttons")}
                       className="selector-boxes"
                       autoComplete="off"
                       help="Provide a link to the image that you want to use as a background."
-                      value={attributes.linkTwo}
+                      value={attributes.linkThree}
                       onChange={(val) => setAttributes({ linkThree: val })}
                     />
                     <TextControl
@@ -436,9 +432,6 @@ export default function Edit({ attributes, setAttributes }) {
                       value={attributes.icon}
                       onChange={(val) => setAttributes({ icon: val })}
                     />
-                    <flex className="rl-panel">
-                      <flex>2</flex>
-                    </flex>
                   </TabPanel>
                 </TabPanels>
               </Tabs>
@@ -446,6 +439,6 @@ export default function Edit({ attributes, setAttributes }) {
           </flex>
         </flex>
       </flex>
-    </flex>
+    </div>
   );
 }

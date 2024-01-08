@@ -8,52 +8,111 @@
 	"icon": "flag",
 	"description": "A Gutenberg block that helps you make a back-to-top button",
 	"attributes": {
-		"selector": {
-			"type": "string",
-			"source": "text",
-			"selector": ".back2top-selector"
-		},
-		"linkOne" : {
-			"type": "string",
-			"source": "text",
-			"selector": ".back2top-link"
-		},
-		"linkTwo" : {
-			"type": "string",
-			"source": "text",
-			"selector": ".back2top-link-two"
-		},
-		"linkThree" : {
-			"type": "string",
-			"source": "text",
-			"selector": ".back2top-link-three"
-		},
-		"icon" : {
-			"type": "string",
-			"source": "text",
-			"selector": ".back2top-icon"
+		"color" : {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"default": "#2DB0B7",
+			"attribute": "data-color"
 		},
 		"height": {
-			"type": "string",
-			"source": "text",
-			"selector": ".back2top-height"
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-height"
 		},
 		"width": {
-			"type": "string",
-			"source": "text",
-			"selector": ".back2top-width"
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-width"
 		},
 		"opacity" :{
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-opacity"
+		},
+		"colorTwo" : {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"default": "#2DB0B7",
+			"attribute": "data-color-two"
+		},
+		"heightTwo": {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-height-two"
+		},
+		"widthTwo": {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-width-two"
+		},
+		"opacityTwo" :{
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-opacity-two"
+		},
+		"colorThree" : {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"default": "#2DB0B7",
+			"attribute": "data-color-three"
+		},
+		"heightThree": {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-height-three"
+		},	
+		"widthThree": {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-width-three"
+		},
+		"opacityThree" :{
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-opacity-three"
+		},
+		"icon" : {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-icon"
+		},	
+		"iconOpacity" : {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-icon-opacity"
+		},
+		"iconSize" : {
 			"type": "string",
-			"source": "text",
-			"selector": ".back2top-opacity"
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-icon-size"
+		},
+		"iconColor" : {
+			"type": "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-icon-color"
 		},
 		"border": {
 			"type": "object",
 			"default": {
-				"color": "",
-				"style": "",
-				"width": ""
+				"color": "0",
+				"style": "0",
+				"width": "0"
 			},
 			"selector": ".back2top-border"
 		},
@@ -67,27 +126,12 @@
 			},
 			"selector": ".back2top-border"
 		},
-		"heightTwo": {
-			"type": "string",
-			"source": "text",
-			"selector": ".back2top-height-two"
-		},
-		"widthTwo": {
-			"type": "string",
-			"source": "text",
-			"selector": ".back2top-width-two"
-		},
-		"opacityTwo" :{
-			"type": "string",
-			"source": "text",
-			"selector": ".back2top-opacity-two"
-		},
 		"borderTwo": {
 			"type": "object",
 			"default": {
-				"color": "",
-				"style": "",
-				"width": ""
+				"color": "0",
+				"style": "0",
+				"width": "0"
 			},
 			"selector": ".back2top-border-two"
 		},
@@ -101,36 +145,21 @@
 			},
 			"selector": ".back2top-border-two"
 		},
-		"heightThree": {
-			"type": "string",
-			"source": "text",
-			"selector": ".back2top-height-three"
-		},
-		"opacityThree" :{
-			"type": "string",
-			"source": "text",
-			"selector": ".back2top-opacity-three"
-		},
-		"widthThree": {
-			"type": "string",
-			"source": "text",
-			"selector": ".back2top-width-three"
-		},
 		"borderThree": {
 			"type": "object",
 			"default": {
-				"color": "",
-				"style": "",
-				"width": ""
+				"color": "0",
+				"style": "0",
+				"width": "0"
 			},
 			"selector": ".back2top-border-three"
 		},
 		"iconBorder": {
 			"type": "object",
 			"default": {
-				"color": "",
-				"style": "",
-				"width": ""
+				"color": "0",
+				"style": "0",
+				"width": "0"
 			},
 			"selector": ".back2top-iconBorder"
 		},
@@ -153,45 +182,31 @@
 				"bottom": "0px"
 			},
 			"selector": ".back2top-icon-border-radius"
-		},
-		"color" : {
-			"type" : "string",
-			"source": "text",
-			"selector": ".back2top-color",
-			"default": "#2DB0B7"
-		},
-		"colorTwo" : {
-			"type" : "string",
-			"source": "text",
-			"selector": ".back2top-color-two",
-			"default": "#2DB0B7"
-		},
-		"colorThree" : {
-			"type" : "string",
-			"source": "text",
-			"selector": ".back2top-color-three",
-			"default": "#2DB0B7"
-		},
-		"iconColor" : {
-			"type" : "string",
-			"source": "text",
-			"selector": ".back2top-icon-color",
-			"default": "#2DB0B7"
-		},
-		"iconSize" : {
+		},						
+		"selector": {
 			"type": "string",
-			"source": "text",
-			"selector": ".back2top-icon-size"
-
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-selector"
 		},
-		"iconOpacity" : {
-			"type": "string",
-			"source": "text",
-			"selector": ".back2top-icon-opacity"
+		"linkOne" : {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-link-one"
+		},
+		"linkTwo" : {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-link-two"
+		},
+		"linkThree" : {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-link-three"
 		}
-	},
-	"supports": {
-		"html": true
 	},
 	"textdomain": "fancy-buttons",
 	"editorScript": "file:./index.js",
