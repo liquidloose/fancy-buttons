@@ -27,12 +27,12 @@ i.material-icons {
 }
 
 .wp-block-create-block-fancy-buttons {
-  opacity: 0;
+  opacity: 1;
   transition: opacity 1s;
 }
 
-.show {
-  opacity: 1;
+.hidden {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style-index.css.map*/
