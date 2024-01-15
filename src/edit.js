@@ -1,7 +1,7 @@
 import { __ } from "@wordpress/i18n";
 import { useState } from "@wordpress/element";
 import { useBlockProps } from "@wordpress/block-editor";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import {
   TextControl,
   ColorPicker,
@@ -102,6 +102,28 @@ export default function Edit({ attributes, setAttributes }) {
   };
 
   console.log("attributes.border", attributes.border);
+
+  let borders = {
+    one: {
+      borderOneStyleRef: useRef(attributes.border.style),
+      borderOneWidthRef: useRef(attributes.border.width),
+      borderOneColorRef: useRef(attributes.border.color),
+    },
+    two: {},
+    three: {},
+  };
+
+  function borderFilter(borderObject, id) {
+    console.log("too long to name: ", borders.one.borderOneStyleRef);
+
+    if (borderObject.style != 0) {
+      console.log("the borderObject.style value is: ", borderObject.style);
+    }
+
+    if (borderObject.width != undefined) {
+      console.log("theborderObject.width value is: ", borderObject.width);
+    }
+  }
 
   return (
     <div {...useBlockProps()}>
@@ -320,7 +342,6 @@ export default function Edit({ attributes, setAttributes }) {
               <flex className="layer">
                 <i className="material-icons" style={iconStyle}>
                   {attributes.icon}
-                  {console.log("iconStyle: ", iconStyle)}
                 </i>
               </flex>
             </flex>

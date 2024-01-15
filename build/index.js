@@ -2111,6 +2111,24 @@ function Edit({
     borderWidth: attributes.iconBorder.width
   };
   console.log("attributes.border", attributes.border);
+  let borders = {
+    one: {
+      borderOneStyleRef: (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(attributes.border.style),
+      borderOneWidthRef: (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(attributes.border.width),
+      borderOneColorRef: (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(attributes.border.color)
+    },
+    two: {},
+    three: {}
+  };
+  function borderFilter(borderObject, id) {
+    console.log("too long to name: ", borders.one.borderOneStyleRef);
+    if (borderObject.style != 0) {
+      console.log("the borderObject.style value is: ", borderObject.style);
+    }
+    if (borderObject.width != undefined) {
+      console.log("theborderObject.width value is: ", borderObject.width);
+    }
+  }
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", {
@@ -2342,7 +2360,7 @@ function Edit({
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("i", {
     className: "material-icons",
     style: iconStyle
-  }, attributes.icon, console.log("iconStyle: ", iconStyle))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", {
+  }, attributes.icon)))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", {
     className: "outer-layer-container"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", {
     className: "inner-layer-container"
@@ -2622,23 +2640,36 @@ function save({
     "data-icon": attributes.icon,
     "data-icon-opacity": attributes.iconOpacity,
     "data-icon-size": attributes.iconSize,
-    "data-icon-color": attributes.iconColor
+    "data-icon-color": attributes.iconColor,
+    "data-border-info": `{border-color: ${attributes.border.color},
+         border-style: ${attributes.border.style},
+         border-width: ${attributes.border.width}}`,
+    "data-border-radius-info": `{border-radius: ${attributes.borderRadius.top}
+          ${attributes.borderRadius.right}
+          ${attributes.borderRadius.bottom}
+          ${attributes.borderRadius.left}}`,
+    "data-border-two-info": `{border-color: ${attributes.borderTwo.color},
+          border-width: ${attributes.borderTwo.width},
+          border-style: ${attributes.borderTwo.style}}`,
+    "data-border-radius-two": `{border-radius: ${attributes.borderRadiusTwo.top}
+          ${attributes.borderRadiusTwo.right}
+          ${attributes.borderRadiusTwo.bottom}
+          ${attributes.borderRadiusTwo.left}}`,
+    "data-border-three-info": `{border-color: ${attributes.borderThree.color},
+          border-width: ${attributes.borderThree.width},
+          border-style: ${attributes.borderThree.style}}`,
+    "data-border-radius-three": `{border-radius: ${attributes.borderRadiusThree.top}
+          ${attributes.borderRadiusThree.right}
+          ${attributes.borderRadiusThree.bottom}
+          ${attributes.borderRadiusThree.left}}`,
+    "data-icon-border-info": `{border-color: ${attributes.iconBorder.color},
+          border-width: ${attributes.iconBorder.width},
+          border-style: ${attributes.iconBorder.style}}`,
+    "data-icon-border-radius": `{border-radius: ${attributes.iconBorderRadius.top}
+          ${attributes.iconBorderRadius.right}
+          ${attributes.iconBorderRadius.bottom}
+          ${attributes.iconBorderRadius.left}}`
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "temp-data back2top-border",
-    style: {
-      display: "none"
-    }
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderWidth: ", attributes.border.width), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderColor: ", attributes.border.color), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderStyle: ", attributes.border.style), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderRadius top: ", attributes.borderRadius.top)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "back2top-border-two",
-    style: {
-      display: "none"
-    }
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderWidth: ", attributes.borderTwo.width), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderColor: ", attributes.borderTwo.color), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderStyle: ", attributes.borderTwo.style), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderRadius top: ", attributes.borderRadiusTwo.top)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "back2top-border-three",
-    style: {
-      display: "none"
-    }
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderWidth: ", attributes.borderThree.width), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderColor: ", attributes.borderThree.color), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderStyle: ", attributes.borderThree.style), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderRadius top: ", attributes.borderRadiusThree.top)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: " back2top-icon-border-radius",
     style: {
       display: "none"
@@ -2665,43 +2696,7 @@ function save({
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("i", {
     className: "material-icons",
     style: iconStyle
-  }, attributes.icon, console.log("iconStyle: ", iconStyle)))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: "wp-block-create-block-fancy-buttons"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: "back2top-data-attributes",
-    "data-color": "#00edf9",
-    "data-height": "110",
-    "data-width": "100",
-    "data-opacity": "1",
-    "data-color-two": "#23505c",
-    "data-height-two": "100",
-    "data-width-two": "90",
-    "data-opacity-two": "0.4",
-    "data-color-three": "#2b5f82",
-    "data-height-three": "70",
-    "data-width-three": "90",
-    "data-opacity-three": "0.4",
-    "data-selector": "asdf",
-    "data-link-one": "testing",
-    "data-link-two": "hellooo",
-    "data-link-three": "sdfsdfsdf",
-    "data-icon": "house",
-    "data-icon-opacity": "1",
-    "data-icon-size": "100",
-    "data-icon-color": "#000000"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: "temp-data back2top-border",
-    style: "display:none"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderWidth: 0px"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderColor: "), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderStyle: none"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderRadius top: 22px")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: "back2top-border-two",
-    style: "display:none"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderWidth: 0px"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderColor: "), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderStyle: none"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderRadius top: 47px")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: "back2top-border-three",
-    style: "display:none"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderWidth: 0px"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderColor: "), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderStyle: none"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderRadius top: 35px")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: " back2top-icon-border-radius",
-    style: "display:none"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderWidth: 0"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderColor: 0"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderStyle: 0"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "borderRadius top: 0px")))));
+  }, attributes.icon, console.log("iconStyle: ", iconStyle))))));
 }
 
 /***/ }),
@@ -17633,7 +17628,7 @@ function combine (array, callback) {
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/fancy-buttons","version":"0.1.0","title":"Fancy Buttons","category":"text","icon":"flag","description":"A Gutenberg block that helps you make a back-to-top button","attributes":{"color":{"type":"string","source":"attribute","selector":".back2top-data-attributes","default":"#2DB0B7","attribute":"data-color"},"height":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-height"},"width":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-width"},"opacity":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-opacity"},"colorTwo":{"type":"string","source":"attribute","selector":".back2top-data-attributes","default":"#2DB0B7","attribute":"data-color-two"},"heightTwo":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-height-two"},"widthTwo":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-width-two"},"opacityTwo":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-opacity-two"},"colorThree":{"type":"string","source":"attribute","selector":".back2top-data-attributes","default":"#2DB0B7","attribute":"data-color-three"},"heightThree":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-height-three"},"widthThree":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-width-three"},"opacityThree":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-opacity-three"},"icon":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-icon"},"iconOpacity":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-icon-opacity"},"iconSize":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-icon-size"},"iconColor":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-icon-color"},"border":{"type":"object","default":{"color":"0","style":"0","width":"0"},"selector":".back2top-border"},"borderRadius":{"type":"object","default":{"top":"0px","left":"0px","right":"0px","bottom":"0px"},"selector":".back2top-border"},"borderTwo":{"type":"object","default":{"color":"0","style":"0","width":"0"},"selector":".back2top-border-two"},"borderRadiusTwo":{"type":"object","default":{"top":"0px","left":"0px","right":"0px","bottom":"0px"},"selector":".back2top-border-two"},"borderThree":{"type":"object","default":{"color":"0","style":"0","width":"0"},"selector":".back2top-border-three"},"iconBorder":{"type":"object","default":{"color":"0","style":"0","width":"0"},"selector":".back2top-iconBorder"},"borderRadiusThree":{"type":"object","default":{"top":"0px","left":"0px","right":"0px","bottom":"0px"},"selector":".back2top-border-three"},"iconBorderRadius":{"type":"object","default":{"top":"0px","left":"0px","right":"0px","bottom":"0px"},"selector":".back2top-icon-border-radius"},"selector":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-selector"},"linkOne":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-link-one"},"linkTwo":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-link-two"},"linkThree":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-link-three"}},"textdomain":"fancy-buttons","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/fancy-buttons","version":"0.1.0","title":"Fancy Buttons","category":"text","icon":"flag","description":"A Gutenberg block that helps you make a back-to-top button","attributes":{"color":{"type":"string","source":"attribute","selector":".back2top-data-attributes","default":"#2DB0B7","attribute":"data-color"},"height":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-height"},"width":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-width"},"opacity":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-opacity"},"colorTwo":{"type":"string","source":"attribute","selector":".back2top-data-attributes","default":"#2DB0B7","attribute":"data-color-two"},"heightTwo":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-height-two"},"widthTwo":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-width-two"},"opacityTwo":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-opacity-two"},"colorThree":{"type":"string","source":"attribute","selector":".back2top-data-attributes","default":"#2DB0B7","attribute":"data-color-three"},"heightThree":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-height-three"},"widthThree":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-width-three"},"opacityThree":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-opacity-three"},"icon":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-icon"},"iconOpacity":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-icon-opacity"},"iconSize":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-icon-size"},"iconColor":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-icon-color"},"border":{"type":"object","default":{"color":"0","style":"0","width":"0"},"selector":".back2top-data-attributes","attribute":"data-border-info"},"borderRadius":{"type":"object","default":{"top":"0px","left":"0px","right":"0px","bottom":"0px"},"selector":".back2top-data-attributes","attribute":"data-border-radius-info"},"borderTwo":{"type":"object","default":{"color":"0","style":"0","width":"0"},"selector":".back2top-data-attributes","attribute":"data-border-radius-"},"borderRadiusTwo":{"type":"object","default":{"top":"0px","left":"0px","right":"0px","bottom":"0px"},"selector":".back2top-data-attributes","attribute":"data-border-radius-two"},"borderThree":{"type":"object","default":{"color":"0","style":"0","width":"0"},"selector":".back2top-data-attributes","attribute":"data-border-three"},"borderRadiusThree":{"type":"object","default":{"top":"0px","left":"0px","right":"0px","bottom":"0px"},"selector":".back2top-data-attributes","attribute":"data-border-radius-three"},"iconBorderRadius":{"type":"object","default":{"top":"0px","left":"0px","right":"0px","bottom":"0px"},"selector":".back2top-data-attributes","attribute":"data-icon-border-radius"},"iconBorder":{"type":"object","default":{"color":"0","style":"0","width":"0"},"selector":".back2top-iconBorder"},"selector":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-selector"},"linkOne":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-link-one"},"linkTwo":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-link-two"},"linkThree":{"type":"string","source":"attribute","selector":".back2top-data-attributes","attribute":"data-link-three"}},"textdomain":"fancy-buttons","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 
