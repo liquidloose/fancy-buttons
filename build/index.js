@@ -2110,25 +2110,6 @@ function Edit({
     borderStyle: attributes.iconBorder.style,
     borderWidth: attributes.iconBorder.width
   };
-  console.log("attributes.border", attributes.border);
-  let borders = {
-    one: {
-      borderOneStyleRef: (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(attributes.border.style),
-      borderOneWidthRef: (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(attributes.border.width),
-      borderOneColorRef: (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(attributes.border.color)
-    },
-    two: {},
-    three: {}
-  };
-  function borderFilter(borderObject, id) {
-    console.log("too long to name: ", borders.one.borderOneStyleRef);
-    if (borderObject.style != 0) {
-      console.log("the borderObject.style value is: ", borderObject.style);
-    }
-    if (borderObject.width != undefined) {
-      console.log("theborderObject.width value is: ", borderObject.width);
-    }
-  }
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("flex", {

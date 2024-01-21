@@ -101,30 +101,6 @@ export default function Edit({ attributes, setAttributes }) {
     borderWidth: attributes.iconBorder.width,
   };
 
-  console.log("attributes.border", attributes.border);
-
-  let borders = {
-    one: {
-      borderOneStyleRef: useRef(attributes.border.style),
-      borderOneWidthRef: useRef(attributes.border.width),
-      borderOneColorRef: useRef(attributes.border.color),
-    },
-    two: {},
-    three: {},
-  };
-
-  function borderFilter(borderObject, id) {
-    console.log("too long to name: ", borders.one.borderOneStyleRef);
-
-    if (borderObject.style != 0) {
-      console.log("the borderObject.style value is: ", borderObject.style);
-    }
-
-    if (borderObject.width != undefined) {
-      console.log("theborderObject.width value is: ", borderObject.width);
-    }
-  }
-
   return (
     <div {...useBlockProps()}>
       <flex className="back2top-container">
