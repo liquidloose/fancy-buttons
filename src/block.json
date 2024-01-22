@@ -6,7 +6,7 @@
 	"title": "Fancy Buttons",
 	"category": "text",
 	"icon": "flag",
-	"description": "A Gutenberg block that helps you make a back-to-top button",
+	"description": "A Gutenberg block that helps you make cool back-to-top buttons",
 	"attributes": {
 		"color" : {
 			"type" : "string",
