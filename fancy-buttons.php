@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name:       Fancy Buttons
- * Description:       A Gutenberg block that helps you make a back-to-top buttons
+ * Description:       A Gutenberg block that helps you make a back-to-top button
  * Requires at least: 6.1
  * Requires PHP:      8.0.26
  * Version:           1.0.0
