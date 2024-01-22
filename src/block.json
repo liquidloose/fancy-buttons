@@ -114,7 +114,8 @@
 				"style": "0",
 				"width": "0"
 			},
-			"selector": ".back2top-border"
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-border-info"
 		},
 		"borderRadius": {
 			"type": "object",
@@ -124,7 +125,8 @@
 				"right": "0px",
 				"bottom": "0px"
 			},
-			"selector": ".back2top-border"
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-border-radius-info"
 		},
 		"borderTwo": {
 			"type": "object",
@@ -133,7 +135,8 @@
 				"style": "0",
 				"width": "0"
 			},
-			"selector": ".back2top-border-two"
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-border-radius-"
 		},
 		"borderRadiusTwo": {
 			"type": "object",
@@ -143,7 +146,8 @@
 				"right": "0px",
 				"bottom": "0px"
 			},
-			"selector": ".back2top-border-two"
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-border-radius-two"
 		},
 		"borderThree": {
 			"type": "object",
@@ -152,16 +156,8 @@
 				"style": "0",
 				"width": "0"
 			},
-			"selector": ".back2top-border-three"
-		},
-		"iconBorder": {
-			"type": "object",
-			"default": {
-				"color": "0",
-				"style": "0",
-				"width": "0"
-			},
-			"selector": ".back2top-iconBorder"
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-border-three"
 		},
 		"borderRadiusThree": {
 			"type": "object",
@@ -171,7 +167,8 @@
 				"right": "0px",
 				"bottom": "0px"
 			},
-			"selector": ".back2top-border-three"
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-border-radius-three"
 		},
 		"iconBorderRadius": {
 			"type": "object",
@@ -181,8 +178,18 @@
 				"right": "0px",
 				"bottom": "0px"
 			},
-			"selector": ".back2top-icon-border-radius"
-		},						
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-icon-border-radius"
+		},
+		"iconBorder": {
+			"type": "object",
+			"default": {
+				"color": "0",
+				"style": "0",
+				"width": "0"
+			},
+			"selector": ".back2top-iconBorder"
+		},							
 		"selector": {
 			"type": "string",
 			"source": "attribute",

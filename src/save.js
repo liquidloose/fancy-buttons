@@ -111,28 +111,35 @@ export default function save({ attributes }) {
         data-icon-opacity={attributes.iconOpacity}
         data-icon-size={attributes.iconSize}
         data-icon-color={attributes.iconColor}
+        data-border-info={`{border-color: ${attributes.border.color},
+         border-style: ${attributes.border.style},
+         border-width: ${attributes.border.width}}`}
+        data-border-radius-info={`{border-radius: ${attributes.borderRadius.top}
+          ${attributes.borderRadius.right}
+          ${attributes.borderRadius.bottom}
+          ${attributes.borderRadius.left}}`}
+        data-border-two-info={`{border-color: ${attributes.borderTwo.color},
+          border-width: ${attributes.borderTwo.width},
+          border-style: ${attributes.borderTwo.style}}`}
+        data-border-radius-two={`{border-radius: ${attributes.borderRadiusTwo.top}
+          ${attributes.borderRadiusTwo.right}
+          ${attributes.borderRadiusTwo.bottom}
+          ${attributes.borderRadiusTwo.left}}`}
+        data-border-three-info={`{border-color: ${attributes.borderThree.color},
+          border-width: ${attributes.borderThree.width},
+          border-style: ${attributes.borderThree.style}}`}
+        data-border-radius-three={`{border-radius: ${attributes.borderRadiusThree.top}
+          ${attributes.borderRadiusThree.right}
+          ${attributes.borderRadiusThree.bottom}
+          ${attributes.borderRadiusThree.left}}`}
+        data-icon-border-info={`{border-color: ${attributes.iconBorder.color},
+          border-width: ${attributes.iconBorder.width},
+          border-style: ${attributes.iconBorder.style}}`}
+        data-icon-border-radius={`{border-radius: ${attributes.iconBorderRadius.top}
+          ${attributes.iconBorderRadius.right}
+          ${attributes.iconBorderRadius.bottom}
+          ${attributes.iconBorderRadius.left}}`}
       ></div>
-
-      <div className="temp-data back2top-border" style={{ display: "none" }}>
-        <div>borderWidth: {attributes.border.width}</div>
-        <div>borderColor: {attributes.border.color}</div>
-        <div>borderStyle: {attributes.border.style}</div>
-        <div>borderRadius top: {attributes.borderRadius.top}</div>
-      </div>
-
-      <div className="back2top-border-two" style={{ display: "none" }}>
-        <div>borderWidth: {attributes.borderTwo.width}</div>
-        <div>borderColor: {attributes.borderTwo.color}</div>
-        <div>borderStyle: {attributes.borderTwo.style}</div>
-        <div>borderRadius top: {attributes.borderRadiusTwo.top}</div>
-      </div>
-
-      <div className="back2top-border-three" style={{ display: "none" }}>
-        <div>borderWidth: {attributes.borderThree.width}</div>
-        <div>borderColor: {attributes.borderThree.color}</div>
-        <div>borderStyle: {attributes.borderThree.style}</div>
-        <div>borderRadius top: {attributes.borderRadiusThree.top}</div>
-      </div>
 
       <div className=" back2top-icon-border-radius" style={{ display: "none" }}>
         <div>borderWidth: {attributes.iconBorder.width}</div>
@@ -153,56 +160,6 @@ export default function save({ attributes }) {
             </i>
           </flex>
         </flex>
-
-        <div class="wp-block-create-block-fancy-buttons">
-          <div
-            class="back2top-data-attributes"
-            data-color="#00edf9"
-            data-height="110"
-            data-width="100"
-            data-opacity="1"
-            data-color-two="#23505c"
-            data-height-two="100"
-            data-width-two="90"
-            data-opacity-two="0.4"
-            data-color-three="#2b5f82"
-            data-height-three="70"
-            data-width-three="90"
-            data-opacity-three="0.4"
-            data-selector="asdf"
-            data-link-one="testing"
-            data-link-two="hellooo"
-            data-link-three="sdfsdfsdf"
-            data-icon="house"
-            data-icon-opacity="1"
-            data-icon-size="100"
-            data-icon-color="#000000"
-          ></div>
-          <div class="temp-data back2top-border" style="display:none">
-            <div>borderWidth: 0px</div>
-            <div>borderColor: </div>
-            <div>borderStyle: none</div>
-            <div>borderRadius top: 22px</div>
-          </div>
-          <div class="back2top-border-two" style="display:none">
-            <div>borderWidth: 0px</div>
-            <div>borderColor: </div>
-            <div>borderStyle: none</div>
-            <div>borderRadius top: 47px</div>
-          </div>
-          <div class="back2top-border-three" style="display:none">
-            <div>borderWidth: 0px</div>
-            <div>borderColor: </div>
-            <div>borderStyle: none</div>
-            <div>borderRadius top: 35px</div>
-          </div>
-          <div class=" back2top-icon-border-radius" style="display:none">
-            <div>borderWidth: 0</div>
-            <div>borderColor: 0</div>
-            <div>borderStyle: 0</div>
-            <div>borderRadius top: 0px</div>
-          </div>
-        </div>
       </flex>
     </div>
   );
