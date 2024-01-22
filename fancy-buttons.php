@@ -2,6 +2,7 @@
 
 /**
  * Plugin Name:       Fancy Buttons
+ * Plugin URI:        https://github.com/liquidloose/fancy-buttons
  * Description:       A Gutenberg block that helps you make a back-to-top button
  * Requires at least: 6.1
  * Requires PHP:      8.0.26
