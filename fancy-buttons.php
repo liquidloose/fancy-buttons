@@ -9,8 +9,8 @@
  * Version:           1.0.0
  * Author:            Ronald Lussier
  * Author URI:		  https://rlussier.net
- * License:           GPL-2.0-or-later
- * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * License:           GNUGPLv3
+ * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain:       fancy-buttons
  *
  * @package           fancy-buttons
