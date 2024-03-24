@@ -6,9 +6,7 @@ const fbGoogleIcons = `
 document.addEventListener("DOMContentLoaded", () => {
   document.head.insertAdjacentHTML("afterbegin", fbGoogleIcons);
 
-  let fancyButton = document.querySelector(
-    ".wp-block-create-block-fancy-buttons"
-  );
+  let fancyButton = document.querySelector(".wp-block-rlussier-fancy-buttons");
 
   addEventListener("scroll", (event) => {
     console.log(event);

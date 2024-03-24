@@ -1,11 +1,11 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "create-block/fancy-buttons",
+  "name": "rlussier/fancy-buttons",
   "version": "0.1.0",
   "title": "Fancy Buttons",
   "category": "text",
-  "icon": "flag",
+  "icon": "button",
   "description": "A Gutenberg block that helps you make a back-to-top button",
   "attributes": {
     "color": {

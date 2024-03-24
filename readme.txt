@@ -20,5 +20,5 @@ Like any other wordpress plugin, simply upload it in the WordPress dashboard and
 1. This is what the visual builder looks like.
 
 == Changelog ==
-= 1.0 =
+= 1.0.0 =
 * The very first version of the plugin. Includes a visual builder that exists in a block that builds a back-to-top button.

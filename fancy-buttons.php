@@ -24,10 +24,10 @@ if (!defined('ABSPATH')) exit; // Exit if accessed directly
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function rlfb_create_block_fancy_buttons_block_init() {
+function rlfb_rlussier_fancy_buttons_block_init() {
 	register_block_type(__DIR__ . '/build');
 }
-add_action('init', 'create_block_fancy_buttons_block_init');
+add_action('init', 'rlfb_rlussier_fancy_buttons_block_init');
 
 function rlfb_enqueue_plugin_files() {
 	wp_enqueue_script('fancy-buttons', plugin_dir_url(__FILE__) . 'js/fancy-buttons.js');
