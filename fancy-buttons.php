@@ -1,4 +1,5 @@
 <?php
+if (!defined('ABSPATH')) exit; // Exit if accessed directly      
 
 /**
  * Plugin Name:       Fancy Buttons
@@ -23,14 +24,13 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function create_block_fancy_buttons_block_init() {
+function rlfb_create_block_fancy_buttons_block_init() {
 	register_block_type(__DIR__ . '/build');
 }
 add_action('init', 'create_block_fancy_buttons_block_init');
 
-function enqueue_plugin_files() {
-	//wp_enqueue_style('remix-icon-css', 'https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css', array(), null);
+function rlfb_enqueue_plugin_files() {
 	wp_enqueue_script('fancy-buttons', plugin_dir_url(__FILE__) . 'js/fancy-buttons.js');
 	wp_enqueue_style('front-end-hide', plugin_dir_url(__FILE__) . 'css/fancy-buttons.css');
 }
-add_action('wp_enqueue_scripts', 'enqueue_plugin_files');
+add_action('wp_enqueue_scripts', 'rlfb_enqueue_plugin_files');

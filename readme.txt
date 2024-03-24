@@ -4,7 +4,7 @@ Tags: button, back-to-top
 Requires at least: 6.1
 Tested up to: 6.4.2
 Requires PHP: 8.0.26
-Stable tag: 1.0
+Stable tag: 1.0.0
 License: GNUGPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
