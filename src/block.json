@@ -1,0 +1,222 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/fancy-buttons",
+	"version": "0.1.0",
+	"title": "Fancy Buttons",
+	"category": "text",
+	"icon": "flag",
+	"description": "A Gutenberg block that helps you make a back-to-top button",
+	"attributes": {
+		"color" : {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"default": "#2DB0B7",
+			"attribute": "data-color"
+		},
+		"height": {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-height"
+		},
+		"width": {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-width"
+		},
+		"opacity" :{
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-opacity"
+		},
+		"colorTwo" : {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"default": "#2DB0B7",
+			"attribute": "data-color-two"
+		},
+		"heightTwo": {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-height-two"
+		},
+		"widthTwo": {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-width-two"
+		},
+		"opacityTwo" :{
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-opacity-two"
+		},
+		"colorThree" : {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"default": "#2DB0B7",
+			"attribute": "data-color-three"
+		},
+		"heightThree": {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-height-three"
+		},	
+		"widthThree": {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-width-three"
+		},
+		"opacityThree" :{
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-opacity-three"
+		},
+		"icon" : {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-icon"
+		},	
+		"iconOpacity" : {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-icon-opacity"
+		},
+		"iconSize" : {
+			"type": "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-icon-size"
+		},
+		"iconColor" : {
+			"type": "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-icon-color"
+		},
+		"border": {
+			"type": "object",
+			"default": {
+				"color": "0",
+				"style": "0",
+				"width": "0"
+			},
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-border-info"
+		},
+		"borderRadius": {
+			"type": "object",
+			"default": {
+				"top": "0px",
+				"left": "0px",
+				"right": "0px",
+				"bottom": "0px"
+			},
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-border-radius-info"
+		},
+		"borderTwo": {
+			"type": "object",
+			"default": {
+				"color": "0",
+				"style": "0",
+				"width": "0"
+			},
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-border-radius-"
+		},
+		"borderRadiusTwo": {
+			"type": "object",
+			"default": {
+				"top": "0px",
+				"left": "0px",
+				"right": "0px",
+				"bottom": "0px"
+			},
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-border-radius-two"
+		},
+		"borderThree": {
+			"type": "object",
+			"default": {
+				"color": "0",
+				"style": "0",
+				"width": "0"
+			},
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-border-three"
+		},
+		"borderRadiusThree": {
+			"type": "object",
+			"default": {
+				"top": "0px",
+				"left": "0px",
+				"right": "0px",
+				"bottom": "0px"
+			},
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-border-radius-three"
+		},
+		"iconBorderRadius": {
+			"type": "object",
+			"default": {
+				"top": "0px",
+				"left": "0px",
+				"right": "0px",
+				"bottom": "0px"
+			},
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-icon-border-radius"
+		},
+		"iconBorder": {
+			"type": "object",
+			"default": {
+				"color": "0",
+				"style": "0",
+				"width": "0"
+			},
+			"selector": ".back2top-iconBorder"
+		},							
+		"selector": {
+			"type": "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-selector"
+		},
+		"linkOne" : {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-link-one"
+		},
+		"linkTwo" : {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-link-two"
+		},
+		"linkThree" : {
+			"type" : "string",
+			"source": "attribute",
+			"selector": ".back2top-data-attributes",
+			"attribute": "data-link-three"
+		}
+	},
+	"textdomain": "fancy-buttons",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

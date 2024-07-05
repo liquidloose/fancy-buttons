@@ -1,0 +1,39 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@font-face {
+	font-family: Gilbert;
+	src: url(../assets/gilbert-color.otf);
+	font-weight: normal;
+}
+
+.wp-block-create-block-gutenpride {
+	font-family: Gilbert, sans-serif;
+	font-size: 32px;
+}
+
+flex.outer-layer-container:hover {
+    cursor: grab;
+}
+
+i.material-icons {
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
+
+#layerOne {
+	position: absolute;
+	background-size: contain !important;
+}
+#layerTwo {
+	position: absolute;
+	background-size: contain !important;
+}
+#layerThree {
+	position: absolute;
+	background-size: contain !important;
+}

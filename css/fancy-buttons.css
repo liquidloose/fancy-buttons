@@ -1,0 +1,9 @@
+.wp-block-create-block-fancy-buttons {
+    opacity: 0;
+    transition: all .10s;
+    transition: all .10s allow-discrete;
+}
+
+.show {
+    opacity: 1;
+}
